@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<title>地图找房</title>
+	<link rel="shortcut icon" href="images/mian_logo.ico">
+	<link rel="stylesheet" type="text/css" href="public/common/css/public.css?20170629_1"/>
+	<link rel="stylesheet" type="text/css" href="public/ext/layui/css/layui.css?20170629_1" />
+	<link rel="stylesheet" type="text/css" href="public/ext/rangeSlider/normalize.min.css?20170629_1" />
+	<link rel="stylesheet" type="text/css" href="public/ext/rangeSlider/ion.rangeSlider.css?20170629_1" />
+	<link rel="stylesheet" type="text/css" href="public/ext/rangeSlider/ion.rangeSlider.skinNice.css?20170629_1" id="styleSrc"/>
+	<link rel="stylesheet" type="text/css" href="css/dtzf.css?20180109"/>
+</head>
+<body>
+<div id="header_item"></div>
+<div class="content layui-form">
+	<div id="content_left" class="content_left">
+		<div class="shuaiXuan">
+			<div class="quYuZhaoFang">
+				<span>区域：</span>
+				<ul class="quyu" id="quyu">
+					<!--<li class="active" value="-1">全部</li>-->
+					<!--<li value="江宁">江宁</li>-->
+					<!--<li value="浦口">浦口</li>-->
+					<!--<li value="建邺">建邺</li>-->
+					<!--<li value="栖霞">栖霞</li>-->
+					<!--<li value="玄武">玄武</li>-->
+					<!--<li value="白下">白下</li>-->
+					<!--<li value="鼓楼">鼓楼</li>-->
+				</ul>
+			</div>
+			<div class="jiaWei">
+				<span style=" width:50px; height:60px; line-height: 60px; font-size: 14px; float: left;">区间：</span>
+				<div style="position:relative;width:290px;font-size:12px; float: left;">
+					<input type="text" id="range_1" value="" />
+				</div>
+				<input type="hidden" id="zjlist"/>
+			</div>
+			<div class="selectSX layui-form layui-form-pane">
+				<div class="quyu_select layui-inline" style="width: 100px; margin-right: 12px; color: #ffffff;">
+					<select name="" id="leixing" data-placeholder="类型" lay-filter="leixing">
+						<option value="-1">类型</option>
+						<option value="0">整租</option>
+						<option value="1">合租</option>
+					</select>
+				</div>
+				<div class="quyu_select layui-inline" style="width: 100px; margin-right: 12px;">
+					<select name="" id="huxing" data-placeholder="户型" lay-filter="huxing">
+						<option value="-1">户型</option>
+						<option value="1">一居</option>
+						<option value="2">二居</option>
+						<option value="3">三居</option>
+						<option value="4">四居</option>
+						<option value="5">四居以上</option>
+					</select>
+				</div>
+				<div class="quyu_select layui-inline" style="width: 100px;height: auto;">
+					<select name="" id="tese" data-placeholder="特色" lay-filter="tese">
+						<option value="-1">特色</option>
+						<!--<option value="1">独立阳台</option>
+						<option value="2">独卫</option>
+						<option value="3">飘窗</option>
+						<option value="4">地铁房</option>-->
+					</select>
+				</div>
+			</div>
+		</div>
+		<input type="hidden" id="xqselect" />
+		<ul id="map_list_ul">
+			<!--<li class="square cf">
+				<a target="_blank" href="fyxq.html?id=">
+					<dd><img src="images/fyde/1.png"/></dd>
+					<dt>
+						<h4><p class="fangName"><span>非的发生的</span>-4居室-卧室A</p><p class="p3 pZheng">整租</p></h4>
+						<p class="p1"><span class="xianLu">【江宁区】地铁1号线祖山路站</span></p>
+						<p class="List_zujin"><span>3200</span>元/月</p>
+						<p class="p2"><strong class="list_tese01">地铁周边</strong><strong class="list_tese02">特色</strong><strong class="list_tese03">duwei</strong></p>
+					</dt>
+				</a>
+			</li>
+			<li class="square cf">
+				<a target="_blank" href="fyxq.html?id=">
+					<dd><img src="images/fyde/2.png"/></dd>
+					<dt>
+					<h4><p class="fangName">非的发生的-4居室-卧室A</p><p class="p3 pZheng">整租</p></h4>
+					<p class="p1"><span class="xianLu">【江宁区】地铁1号线祖山路站</span></p>
+					<p class="List_zujin"><span>3200</span>元/月</p>
+					<p class="p2"><strong class="list_tese01">地铁周边</strong><strong class="list_tese02">特色</strong><strong class="list_tese03">duwei</strong></p>
+					</dt>
+				</a>
+			</li>-->
+		</ul>
+		<div id="map_list_ul_page" class="map_list_ul_page">
+		</div>
+	</div>
+	<div id="content_right">
+
+	</div>
+	<div class="content1 layui-form layui-form-pane">
+			<!--<div class="quyu_select layui-inline">
+				<select name="" id="tese" data-placeholder="特色" lay-filter="">
+					<option value="">特色</option>
+					<option value="">特色</option>
+				</select>
+			</div>-->
+			<div class="quyu_select layui-inline">
+				<select name="" id="wzlist" data-placeholder="区域找房" lay-filter="wzlist">
+					<option value="-1">区域找房</option>
+				</select>
+			</div>
+			<div class="ditie_select layui-inline" style="display: none;">
+				<select name="" id="dtZf" lay-filter="dtZf">
+					<option data-placeholder="地铁找房" value="-1" >地铁找房</option>
+				</select>
+			</div>
+			<div class="huxing_select layui-inline" style="display: none;">
+				<select name="" id="hxlist" lay-filter="hxlist">
+					<option data-placeholder="房屋居室" value="-1" >房屋居室</option>
+				</select>
+			</div>
+		<!--<div class="shangQuan" id="wzlist2">
+			<ul>
+				<li>北苑</li>
+				<li>望京</li>
+				<li>回龙观</li>
+				<li>龙泽</li>
+				<li>西二旗</li>
+			</ul>
+		</div>-->
+		<div class="dtInput layui-form-item">
+			<div class="layui-inline">
+				<label class="layui-form-label" style="width: 36px;">我想住</label>
+				<div class="layui-input-inline" style="width: 238px;">
+					<input type="text" id="fuJinWeizhi" name="" placeholder="这附近..." autocomplete="off" class="layui-input">
+				</div>
+				<button id="fuJinWeizhiSearch" class="layui-btn layui-btn-warm ">搜索</button>
+
+			</div>
+		</div>
+		<div class="listZhaoFang">
+			<a href="list.html">列表找房</a>
+		</div>
+	</div>
+	<!--<div class="dtInput">
+		<input type="text" placeholder="我想住..."/>
+		<a href="javaScript:;"></a>
+	</div>-->
+	<!--<p class="returnList">列表</p>-->
+</div>
+<div id="footBottom" style="display:none;"></div>
+<!--百度竞价-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?25fc3d827dfda82dd810a3652d4d0ba2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度竞价 end-->
+<!--百度统计-->
+<script>
+    var _hmt1 = _hmt1 || [];
+    (function() {
+        var hm1 = document.createElement("script");
+        hm1.src = "https://hm.baidu.com/hm.js?9a9d1cccafe359fe0d5a4bfcbae48c5b";
+        var s1 = document.getElementsByTagName("script")[1];
+        s1.parentNode.insertBefore(hm1, s1);
+    })();
+</script>
+<!--百度统计 end-->
+<script type="text/javascript" src="public/common/js/jquery-1.8.0.min.js?20170629_1"></script>
+<script type="text/javascript" src="public/ext/layui/layui.all.js?20170629_1"></script>
+<script type="text/javascript">
+	layui.use('form', function(){
+		var form = layui.form(); //只有执行了这一步，部分表单元素才会修饰成功
+	});
+</script>
+<!--<script type="text/javascript" src="public/ext/map/baiduMap2.0.js?20170629_1"></script>-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SKG8d2hZRjmSQpvtkz89nquhHn5BCrdD"></script>
+<script type="text/javascript" src="public/ext/rangeSlider/ion.rangeSlider.js?20170629_1"></script>
+<script type="text/javascript" src="public/common/js/public.js?20170629_1"></script>
+<script type="text/javascript" src="js/api/dtzfApi.js?20180109"></script>
+<script type="text/javascript" src="js/dtzf.js?20180109"></script>
+</body>
+</html>

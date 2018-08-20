@@ -1,0 +1,235 @@
+.none{
+    display: none;
+}
+.my-content{
+    width: 1200px;
+    height: auto;
+    margin: 30px auto 30px;
+    overflow: hidden;
+}
+.my-con-left{
+    width: 233px;
+    height: 684px;
+    background: #F6FCFC;
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+}
+.myContent{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.title-fenlei{
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.title-fenlei strong{
+    width: 100%;
+    height: 40px;
+    background-color: #1BC0C3;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+   /* background: url("../images/geren.jpg") no-repeat left 10px;*/
+    display: block;
+    cursor: pointer;
+}
+.ziqi-xiangxi{
+    width: auto;
+    height: 160px;
+    overflow: hidden;
+    text-align: center;
+}
+.ziqi-xiangxi li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    padding:10px 0 0 0px;
+}
+.ziqi-xiangxi li a:hover{
+    color: #E97755;
+}
+.active{
+    color: #E97755;
+}
+.my-con-right{
+    width: 955px;
+    height: auto;
+    min-height: 480px;
+    background: #ffffff;
+    border-radius: 5px;
+    float: right;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.fuwuContent{
+    width: 890px;
+    height: auto;
+    margin: 25px auto 25px;
+    overflow: hidden;
+}
+.fuwuContent h3{
+    border-bottom: 1px solid #1FB7B6;
+    margin: 25px 0 2px 0;
+}
+.fuwuContent h3 span{
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 100;
+    display: inline-block;
+    vertical-align: top;
+    color: #1FB7B6;
+}
+.wenziCon{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.wenziCon p{
+    height: auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+    text-indent: 2.2em;
+    overflow: hidden;
+}
+.wx{
+	display: inline-block;
+	width: 160px;
+	float: left;
+	height:20px;
+}
+.wximg{
+	float: left;
+	width:150px;
+	height:150px;
+}
+.wenziCon p a{
+    color: #000000;
+}
+.wenziCon p a:hover{
+    color: #008cd6;
+}
+/*租客保障*/
+.wenda{
+    width: 100%;
+    margin: 10px auto 15px auto;
+}
+.wenda dt{
+    background:url(../images/wen.png) no-repeat left 2px;
+    line-height: 20px;
+    font-size:16px;
+    color: #333333;
+    font-weight:600;
+    padding-left:26px;
+}
+.wenda dd{
+    width:864px;
+    background:url(../images/da.png) no-repeat left 2px;
+    font-size:14px;
+    color: #666666;
+    padding-left:26px;
+    margin-top: 5px;
+}
+
+/*招聘*/
+.wenziCon h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 22px;
+}
+.wenziCon h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 30px;
+}
+.zhaoPinCon{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.wenziCon h6{
+    width: 600px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #1FB7B6;
+    text-indent: 2em;
+    overflow: hidden;
+}
+.wenziCon h6 span{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    overflow: hidden;
+}
+.wenziCon dl{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.wenziCon dl dt{
+    width: auto;
+    height: auto;
+    line-height: 30px;
+    font-size: 18px;
+    text-indent: 2em;
+    vertical-align: top;
+    overflow: hidden;
+}
+.wenziCon dl dd{
+    width: 600px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.wenziCon dl dd p{
+    width: auto;
+    height: auto;
+    line-height: 30px;
+    font-size: 16px;
+    overflow: hidden;
+}
+.wenziCon dl dd p strong{
+    width: 10px;
+    height: 24px;
+    background: url("../images/zhaoPinList.png") no-repeat left center;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.touti{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.touti p{
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 100;
+    text-indent: 0;
+    margin-top: 5px;
+    overflow: hidden;
+}

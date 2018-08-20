@@ -1,0 +1,105 @@
+/*---翻页---*/
+.pages{
+    text-align: center;
+}
+.map_list_ul_page{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    text-align: center;
+}
+.layui-laypage{
+    background-color: transparent;
+}
+.layui-laypage span, .layui-laypage a{
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.layui-laypage a:hover{
+    color:#fff;
+    background: #008cd6;;
+    border-color:#008cd6;
+}
+.layui-laypage>*:first-child, .layui-laypage>*:first-child em{
+    border-radius: 5px;
+}
+.layui-laypage>*:last-child, .layui-laypage>*:last-child em {
+    border-radius: 5px;
+}
+.layui-laypage-em{
+    border-radius: 5px;
+}
+.shenLue{
+    max-width: 8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list li .tese{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.list li .tese span{
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.list li .tese .tese01{
+    color: #008cd6;
+    border-color: #008cd6;
+}
+.list li .tese .tese02{
+    color: #4cd6e4;
+    border-color: #4cd6e4;
+}
+.list li .tese .tese03{
+    color: #02cab0;
+    border-color: #02cab0;
+}
+/*没有找到房源信息！*/
+.noFyuan{
+    width: 355px;
+    height: 290px;
+    margin: 100px auto 0;
+}
+.noFyuan dt{
+    width: 130px;
+    height: 80px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    float: left;
+    padding:20px 10px 0 10px;
+}
+.noFyuan dt span{
+    color: #2c8ef6;
+}
+.noFyuan dd{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+.noFyuan dd img{
+    width: 200px;
+    height: 200px;
+}

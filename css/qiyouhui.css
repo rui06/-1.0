@@ -1,0 +1,97 @@
+.qiyouhuibanner{
+    width: 100%
+}
+.qiyouhuibanner img{
+    width:100%;
+}
+/*标题*/
+.con-title{margin:165px 0;}
+.con-title h2{text-align: center;font-size: 35px;color: #333;height: 52px;}
+.con-title h3{text-align: center;font-size: 26px;color: #ccc;margin-top: 10px;}
+.con-title h2>i{display: inline-block;width: 180px;height: 1px;background-color: #1B1B1B;vertical-align: middle;}
+.con-title h2>i.line-left{margin-right: 70px;}
+.con-title h2>i.line-right{margin-left: 70px;}
+.con-title h2>span{color: #1FB7B6;}
+
+/*员工福利*/
+.content{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.all-list{
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0 40px;
+}
+.all-list li{
+    width: 180px;
+    margin-right: 160px;
+    float:left;
+    text-align: center;
+}
+.all-list li:last-child{
+    margin-right: 0px;
+}
+.all-list li p{
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+    line-height: 50px
+}
+.all-list li h2{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    line-height: 100px;
+}
+.all-lists{
+    width: 100%;
+    overflow: hidden;
+}
+.all-lists li{
+    width: 25%;
+    float:left;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.all-lists li:last-child{
+    margin-right: 0px;
+}
+.mhqbtn{
+    width: 586px;
+    height: 90px;
+    margin: 172px auto;
+}
+.mhqbtn a{
+    display: inline-block;
+    width: 100%;
+    background-color: #1FB7B6;
+    text-align: center;
+    line-height: 90px;
+    font-size:28px;
+    color: #fff;
+}
+/*弹层*/
+.cons-title{margin: 40px 0 20px;}
+.cons-title h2{text-align: center;font-size: 14px;color: #333;height: 35px;}
+.cons-title h2>i{display: inline-block;width: 50px;height: 1px;background-color: #1B1B1B;vertical-align: middle;}
+.cons-title h2>i.line-left{margin-right: 20px;}
+.cons-title h2>i.line-right{margin-left: 20px;}
+.cons-title h2>span{color: #1FB7B6;}
+
+.erweima{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom:1px dashed #12AFAE;
+}
+.erweima img{
+    width: 150px;
+}
+.layer-tex{text-align: center;}
+.layer-tex span{display:inline-block;color: #979797;font-size: 14px;text-align: center;display: inline-block;margin: 20px 0 20px;}
+.layer-tex span i{display: inline-block;width: 16px;height: 16px;background: url(../images/mianhuaquan/shaoyishao.png) center center no-repeat;background-size: contain;vertical-align: middle;margin-right: 10px;}
+.layer-tex p{color: #12AFAE;font-size: 14px;text-align: center;}

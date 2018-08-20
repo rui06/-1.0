@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+/*zanghao*/
+/*2012-09-10*/
+body,div,ul,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,form,input,p,a,img,html{margin:0; padding:0;}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu,img,li img{display:block;}
+img,input{vertical-align:middle;border:0;}
+ol,ul,li{list-style:none;}
+body{font:400 14px/25px "Microsoft Yahei"; background: #f6f6f6}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+a{ text-decoration:none;}
+a:hover{ color:#3e7bd6;}
+b{ font-weight:normal;}
+.fl{ float:left; display:inline;} .fr{ float:right; display:inline;} .pr{ position:relative;}.tac{ text-align:center;} .tar{ text-align:right;}
+.f12{ font-size:12px;}.f14{ font-size:14px;} .f16{ font-size:16px;} .f18{ font-size:18px;} .f20{ font-size:20px;}
+.fwb{ font-weight:bold;}.fwn{ font-weight:normal;}
+.pad5{ padding:5px;}
+.pad10{ padding:10px;}.pt10{ padding-top:10px;} .pb10{ padding-bottom:10px;} .pl10{ padding-left:10px;} .plr10{ padding-left:10px; padding-right:10px;}
+.mt5{ margin-top:5px;}.mr5{ margin-right:5px;}.ml5{ margin-left:5px;}.mtb10{ margin-top:10px; margin-bottom:10px;}
+.mar10{ margin:10px;}.mt10{ margin-top:10px;}.ml10{ margin-left:10px;} .mb10{ margin-bottom:10px;}.mr10{ margin-right:10px;}.mlr15{ margin-left:15px; margin-right:15px;}
+.tdu a{ text-decoration:underline;}
+.tdu a:hover{ text-decoration:none;}.mb5{ margin-bottom: 5px;}
+.tal{ text-align:left;}.tar{ text-align:right;}.tac{ text-align:center;}
+.lh20{ line-height:20px;}.lh24{ line-height:24px;}
+.ti2{ text-indent:2em;}
+.lh2{ line-height:2em;}.lh25{ line-height:25px;}.lh30{ line-height:30px;}.lh35{ line-height:35px;}
+.bk5{ height:5px;}.bk10{ height:10px; font-size:100%; line-height:0;}
+.cwhite,.cwhite a{ color:#FFF;}
+.cgray3,.cgray3 a{ color:#333}.cgray5,.cgray5 a{ color:#555}.cgray8,.cgray8 a{ color:#888}.cred,.cred a{ color:red;}
+.w1000,header,footer,.container{ width:1000px; margin:0 auto;}
+.clearfix:after {content: ".";  display:block;  height:0;  clear: both;  visibility: hidden;}
+.clearfix {display:inline-block;}
+* html .clearfix {height:0; }
+.clearfix {display: block; overflow:auto; clear:both; height:0;}
+.bb1d{ border-bottom:1px solid #e4e4e4;}
+.b1d{ border:1px solid #e4e4e4;}
+i{ font-style:normal;}
+.w1200{ width:1200px; margin:0 auto;}
+.w800{ width:800px;}
+/*------------------------------------------------------------------------end-----------------------------------------------------------------------*/
+
+/*分页*/
+DIV.jogger { padding:2px;  margin:30px auto 50px; text-align:center;}
+DIV.jogger A { padding:5px 10px;   MARGIN: 2px 5px; COLOR: #fff; BACKGROUND-COLOR: #33bdda; TEXT-DECORATION: none}
+DIV.jogger A:hover {    COLOR: #fff; BACKGROUND-COLOR: #171717}
+DIV.jogger A:active {    COLOR: #fff; BACKGROUND-COLOR: #171717}
+DIV.jogger SPAN.current { padding:5px 10px;    MARGIN: 2px; COLOR: #6d643c; BACKGROUND-COLOR: #ddd;}
+DIV.jogger SPAN.disabled {    DISPLAY: none}
+.w733 .bd li{ margin-left:15px; margin-right:15px;}
+.f40{font-size: 40px;}
+.corange,.corange a{ color:#fe5b2d;}
+.more{ display:block; width:200px; height:40px; line-height:40px; text-align: center; margin:0 auto;-webkit-border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; border-radius:5px; background:#33bdda; color:#fff; margin-bottom: 30px; font-size: 14px;}
+.more:hover{ font-weight: bold; color:#fff; font-size: 16px;}
+.FriendLink{border-top:1px solid #101719; border-bottom:1px solid #101719; margin:30px auto 10px; color:#555; padding:10px 0;}
+.FriendLink p a{ margin-right: 10px; margin-left: 5px; color:#686d6e;}
+.FriendLink p a:hover{ color:#fff;}
+.Footer{ background:#040b0d; padding:60px 0 30px; border-top:3px solid #1fb9dc;}
+.Index-Footer{ border-top:none;}
+.Footer dl{ float:left; border-left:1px solid #1d2527; width:250px; height:180px;}
+.Footer dd,.Footer dt{ padding-left:80px; }
+.Footer dt{ font-size: 16px; color: #cdcecf; margin-bottom: 10px; border-left:1px solid #505556; margin-left:-1px;}
+.Footer dd a{ color:#686d6e; font-size: 14px;}.Footer dd a:hover{ color:#fff;}
+.Footer .weichat{ margin-left:30px;}
+.Footer .Fgx{ padding:20px 0;}
+.Footer .tac{ color:#404547; font-size: 12px;}
+.brnav{ padding:30px 0 10px; font-size: 14px;color:#555;}
+.brnav i.home{ display:inline-block; height:30px; line-height:30px; width:30px; background:url(../images/ico.png) 0 -260px no-repeat; float:left; }
+.brnav a{ color:#555;}
+.brnav a:hover{ color:#33bdda;}
+
+
+
+
+
+
+
+
+
+

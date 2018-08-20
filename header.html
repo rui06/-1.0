@@ -1,0 +1,93 @@
+<link rel="stylesheet" type="text/css" href="public/common/css/public.css?20170629_1">
+<link rel="stylesheet" type="text/css" href="css/header.css?20180108_01">
+<div class="header">
+    <div class="logo">
+        <h1><a href="index.html"><img src="images/slogan.png" /></a></h1>
+    </div>
+    <ul class="headerNav" id="headerNav">
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="list.html">我要租房</a>
+        </li>
+        <li>
+            <a href="dtzf.html">地图找房</a>
+        </li>
+        <li>
+            <a href="mianhuaquan.html">棉花圈</a>
+        </li>
+        <li>
+            <a href="qiyouhui.html">企友会</a>
+        </li>
+        <li>
+            <a href="yeZhujiameng.html">业主委托</a>
+        </li>
+        <li>
+            <a href="downloadapp.html">下载app</a>
+        </li>
+    </ul>
+    <div class="renWu" id="renWu">
+        <a href="renWuZhi.html">棉花文化</a>
+        <a href="newLife.html">租客活动</a>
+    </div>
+    <div class="geRenZX">
+        <a href="javaScript:;" class="geRenZhongXin">个人中心</a>
+        <a href="javaScript:;" class="tuichu">退出</a>
+    </div>
+
+</div>
+<!------- 头部导航  end ------>
+<script type="text/javascript" src="public/common/js/jquery-1.8.0.min.js?20170629_1"></script>
+<script type="text/javascript">
+    //人物志下拉框隐藏显示
+    $("#zuKe").click(function () {
+        $("#renWu").toggle();
+    });
+    $("#renWu").mouseover(function () {
+        $(this).show();
+    });
+    $("#renWu").mouseout(function () {
+        $(this).hide();
+    });
+    //已登录
+    if(isNull(strFormat(getItems("zukePhone")))){
+        $("#gerenzhongxin").attr("href","login.html");
+        $("#gerenzhongxin").html("登录/注册");
+        $("#renWu").css("right","340px");
+    }else{
+        //$("#gerenzhongxin").attr("href","geRenCenter.html");
+        $("#gerenzhongxin").html(getItems("zukePhone"));
+        $("#gerenzhongxin").css({
+            "font-size":"14px",
+            "letter-spacing":"0"
+        });
+        $("#gerenzhongxin").click(function () {
+            $(".geRenZX").toggle();
+        });
+    }
+    $(".geRenZX").mouseover(function () {
+        $(this).show();
+    });
+    $(".geRenZX").mouseout(function () {
+        $(this).hide();
+    });
+    //判断是否登录
+    $(".geRenZhongXin").click(function () {
+        isLogin();
+    });
+    function isLogin() {
+        if(isNull(getItems("zukePhone"))){
+            window.location.href = "login.html";
+        }else{
+            window.location.href = "geRenCenter.html";
+        }
+    }
+    /*退出*/
+    $(".tuichu").click(function () {
+        delItems("zukePhone");
+        delItems("yanZhengMa");
+        delItems("zukeSFZ");
+        $(this).attr("href","login.html");
+    });
+</script>

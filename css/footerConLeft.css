@@ -1,0 +1,48 @@
+.footerLeft{
+    width: 235px;
+    height: auto;
+    overflow: hidden;
+}
+.myContent{
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.title-fenlei{
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.title-fenlei strong{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 100;
+    text-indent: 1em;
+    color: #333333;
+    background: url("../images/geren.jpg") no-repeat left 10px;
+    display: block;
+    cursor: pointer;
+}
+.ziqi-xiangxi{
+    width: auto;
+    height: 102px;
+    overflow: hidden;
+}
+.ziqi-xiangxi li{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #999999;
+    padding:10px 0 0 18px;
+}
+.ziqi-xiangxi li a:hover{
+    color: #008cd6;
+}
+.active{
+    color: #008cd6;
+}

@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+/*2015/08/03 Edit by zanghao*/
+body, div, ul, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, form, input, p, a, img, html {
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+    display: block;
+}
+
+body {
+    font-family: "微软雅黑","宋体";
+    font-size: 14px;
+    line-height: 25px;
+}
+
+img, input {
+    vertical-align: middle;
+    border: 0;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a img {
+        border: none;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.fl {
+    float: left !important;
+}
+
+.fr {
+    float: right !important;
+}
+
+.pr {
+    position: relative;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+}
+
+.tal {
+    text-align: left;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+.pad5 {
+    padding: 5px;
+}
+
+.pad10 {
+    padding: 10px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.plr10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ptb10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+.mlr5{ margin-left: 5px; margin-right: 5px;}
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.mb0 {
+    margin-bottom: 0!important;
+}
+
+.mar10 {
+    margin: 10px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mlr10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tdu a {
+    text-decoration: underline;
+}
+
+    .tdu a:hover {
+        text-decoration: none;
+    }
+
+.lh20 {
+    line-height: 20px;
+}
+
+.lh24 {
+    line-height: 24px;
+}
+
+.ti2 p {
+    text-indent: 2em;
+}
+
+.lh2 {
+    line-height: 2em;
+}
+
+.lh25 {
+    line-height: 25px;
+}
+
+.lh30 {
+    line-height: 30px;
+}
+
+.lh35 {
+    line-height: 35px;
+}
+
+.bk5 {
+    height: 5px;
+}
+
+.bk10 {
+    height: 10px;
+    font-size: 100%;
+    line-height: 0;
+}
+
+.cmain, .cmain a {
+    color: #523317;
+}
+
+.cgray3, .cgray3 a {
+    color: #333;
+}
+
+.cgray5, .cgray5 a {
+    color: #555;
+}
+
+.cgray8, .cgray8 a {
+    color: #888;
+}
+
+.cred, .cred a {
+    color: red;
+}
+
+.cblue, .cblue a {
+    color: #45bfdb;
+}
+
+.cpink {
+    color: #ff78be;
+}
+
+.corange, .corange a {
+    color: #ff5a11 !important;
+}
+
+.w1200 {
+    margin: 0 auto;
+    width: 1200px;
+}
+.w1198{ width:1198px; margin:0 auto; border:1px solid #ddd;}
+
+.clearfix {
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    clear: both;
+    line-height: 0;
+    display: block;
+}
+
+clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+* html .clearfix {
+    height: 0;
+    overflow: hidden;
+}
+
+tt,.yahei {
+    font-family: "微软雅黑";
+}
+
+i{ font-style:normal; }
+.sbox i.home{ display:inline-block; height:22px; background:url(../images/ico.png) 0 1px no-repeat; padding-left:25px;}
+.sbox i.time{ display:inline-block; height:22px; background:url(../images/ico.png) 0 -28px no-repeat; padding-left:25px;}
+/*.pages{ text-align: center;}
+.pages a{ display:inline-block; height:35px; line-height:35px; width:35px; margin:0 5px; border:1px solid #ddd; text-align: center; border-radius:5px; overflow:hidden; color:#555;}
+.pages a:hover,.pages a.cur{ color:#fff; background:#11abec; border-color:#11abec;}*/
+.biankuang{ border:1px solid #ddd;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+/*----centent-----*/
+.center{
+	width:100%;
+	background-color: #f8f8f8;
+	padding: 30px 0 30px 0;
+}
+.bj_content{
+	width:1000px;
+	margin:0 auto;	
+	border:1px solid #008cd6;
+	background: #ffffff;
+	border-radius: 5px;
+	padding-bottom: 40px;
+}
+.question{
+	width:1000px;
+	height:84px;
+	border-bottom: 1px dashed #008cd6;
+}
+.question h2{
+	color:#008cd6;
+	line-height: 28px;
+	font-size:22px;
+	font-weight:200;
+	padding-top:30px;
+	padding-left:50px;
+}
+.question .ask{
+	float:right;
+	margin-right:34px;
+	margin-top:-35px;
+	
+}
+.question .ask a{
+	width:116px;
+	height:40px;
+	border:1px solid #008cd6;
+	background: #008cd6;
+	border-radius: 3px;
+	text-decoration: none;
+	color:#fff;
+	display: inline-block;
+	vertical-align: top;
+}
+.question .ask a:hover{
+	opacity: 0.85;
+	transition: 0.2s;
+}
+.question .ask h3{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-weight:200;
+	cursor: pointer;
+}
+.dian{
+	width:780px;
+	height:6px;
+	/*background:url(../images/dian.png) center;
+	margin: 46px auto 0 auto;*/
+}
+.wenda .wenda1{
+	width: 900px;
+	margin: 20px auto 20px auto;
+}
+.wenda .wenda1 h3{
+	/*background:url(../images/wen.png) no-repeat left 2px;*/
+	width: auto;
+	height: 24px;
+	line-height: 24px;
+	font-size:16px;
+	font-weight:600;
+	color: #444444;
+}
+.wenda .wenda1 h3 span{
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-size:16px;
+	color: #ffffff;
+	font-weight:100;
+	text-align: center;
+	background: #008cd6;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 6px;
+}
+.wenda .wenda1 p{
+	width:100%;
+	/*background:url(../images/da.png) no-repeat left 2px;*/
+	font-size:14px;
+	color: #555555;
+	padding-left:30px;
+	margin-top: 10px;
+}
+#mask{
+	background-color:#3D3C3C;   
+    filter:alpha(opacity=50);     
+    opacity:0.5;     
+    z-index:1;   
+    position:absolute; 
+    left: 0;
+    top: 0;
+    display: none;
+}
+/*
+#tiWen{
+	width: 700px;
+	height: auto;
+	border: 1px solid #929292;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	position: fixed;
+	top: 230px;
+	left: 30%;
+	z-index: 9999999;
+	display: none;
+	overflow: hidden;
+}
+#tiWen h3{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	position:relative;
+	margin-top: 20px;
+	overflow: hidden;
+}
+#close{
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #EF7000;
+	text-decoration: none;
+	position:absolute;
+	right: 20px;
+}
+!*#tiWen textarea{
+	width: 660px;
+	line-height: 40px;
+	font-size: 14px;
+	text-indent: 2em;
+	border: 1px solid #E2E2E2;
+	background-color: #F9F9F9;
+	display: block;
+	margin: 20px auto 0;
+	overflow: hidden;
+}*!
+#con_input{ 
+	height: 240px;
+}
+#con_phone{
+	height: 40px;
+}
+#bunTijiao{
+	width: 660px;
+	height: 40px;
+	line-height: 40px;
+	color: #ffffff;
+	background-color: #EF7000;
+	font-size: 14px;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+	display:block;
+	margin: 50px auto 50px;
+	overflow: hidden;
+}
+*/

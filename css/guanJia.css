@@ -1,0 +1,144 @@
+.guanjiaCon{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #008cd6;
+    border-radius: 100%;
+    margin: 50px auto 50px;
+    position: relative;
+}
+.guanjiaPic{
+    width: 130px;
+    height: 130px;
+    margin: 60px auto 0;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.guanjiaPic img{
+    width: 130px;
+    height: 130px;
+}
+.guanjiaCon dl{
+    width: auto;
+    position: absolute;
+}
+/*姓名*/
+.guanjiaName{
+    height: 74px;
+}
+.guanjiaName dt{
+    width: 250px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+    position: absolute;
+    top: -240px;
+    left: 0;
+}
+.guanjiaName dd{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    background: #008cd6;
+    border-radius: 100%;
+    position: absolute;
+    top: -210px;
+    left: 103px;
+}
+/*微信*/
+.guanjiaWeiXin{
+    height: 50px;
+}
+.guanjiaWeiXin dt{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: right;
+    color: #666666;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: -90px;
+    left: -180px;
+}
+.guanjiaWeiXin dd{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    background: #008cd6;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: -90px;
+    left: -25px;
+}
+/*电话*/
+.guanjiaPhone{
+    height: 50px;
+}
+.guanjiaPhone dt{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    background: #008cd6;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: -90px;
+    right: -275px;
+}
+.guanjiaPhone dd{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: left;
+    color: #666666;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: -90px;
+    right: -480px;
+}
+/*工作时间*/
+.gongzuoTime{
+    height: 74px;
+}
+.gongzuoTime dt{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    background: #008cd6;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -10px;
+    left: 105px;
+}
+.gongzuoTime dd{
+    width: 200px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+    position: absolute;
+    bottom: -40px;
+    left: 30px;
+}

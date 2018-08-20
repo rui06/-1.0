@@ -1,0 +1,26 @@
+{
+  "name": "officialwebsite-old",
+  "version": "1.0.0",
+  "description": "棉花公寓官网-旧版",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server index.html -a 0.0.0.0 -p 8001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.efanghang.com:mianhuagongyuWeb/officialWebsite-old.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-rev": "^8.1.1",
+    "gulp-uglify": "^3.0.0",
+    "http-server": "^0.11.1",
+    "nunjucks": "^3.1.3"
+  }
+}

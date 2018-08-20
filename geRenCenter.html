@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <title>个人中心</title>
+    <link rel="shortcut icon" href="images/mian_logo.ico">
+    <link rel="stylesheet" type="text/css" href="public/common/css/public.css?20170629_1"/>
+    <link rel="stylesheet" type="text/css" href="public/ext/layui/css/layui.css?20170629_1" />
+    <link rel="stylesheet" type="text/css" href="css/geRenCenter.css?20170629_1" />
+</head>
+<body>
+<!------- 头部 ------->
+<div id="header_item"></div>
+<!------- content ------->
+<div class="geRenContent">
+    <div class="content">
+        <div class="conLeft">
+            <dl class="touXiang">
+                <dt><img src="images/touxiang02.jpg" /></dt>
+                <dd id="zukeName">租客名称</dd>
+            </dl>
+            <div class="geRenLieBiao">
+                <a class="geRenClick conActive" href="#geRen0">我的预约</a>
+                <a class="geRenClick" href="#geRen1">我的预定</a>
+                <a class="geRenClick" href="#geRen2">我的合同</a>
+                <a class="geRenClick" href="#geRen3">我的优惠券</a>
+                <a class="geRenClick" href="#geRen4">个人资料</a>
+            </div>
+        </div>
+        <div class="conRight">
+            <!----我的预约------>
+            <div class="personalContent yuyue-content" style="padding: 5px 15px;">
+                <h3 class="yuyue-H3"><span>我的预约</span></h3>
+                <ul class="yuYueCon" id="yuYueContent">
+                    <!--<li class="yuYue">
+                        <dl class="yuyue-oneHt">
+                            <dt><img src="images/fangImages.jpg"/></dt>
+                            <dd class="yuyue-houseXqing">
+                                <p class="yuyue-fangName">东城鼓楼大街-武夷绿洲-3室2厅1卫-78m²<span>整租</span></p>
+                                <p class="yuyue-houseGeju">
+                                    <strong><b>5000</b>元/月</strong>
+                                </p>
+                                <p class="yuyue-zhuangTai">状态：预约看房</p>
+                            </dd>
+                            <dd class="yuyue-chakan">
+                                &lt;!&ndash;<span>预定房源</span>&ndash;&gt;
+                                <a href="#">查看详情 >></a>
+                            </dd>
+                        </dl>
+                    </li>-->
+                </ul>
+                <div id="demo2" style="text-align: center; margin: 5px 0 15px 0;"></div>
+            </div>
+            <!----我的预约  end------>
+            <!----我的预定------>
+            <div class="personalContent yuyue-content" style=" padding:5px 15px;display: none">
+                <h3 class="yuyue-H3"><span>我的预定</span></h3>
+                <ul class="yuYueCon" id="yuDingContent">
+                    <li>
+                        <dl style="width: 300px; height: auto; margin: 120px auto 0;">
+                            <dt style="text-align: center;"><img src="images/noSeach.png" /></dt>
+                            <dd style="width: 100%; height: 30px; line-height: 30px; font-size: 16px; text-align: center; margin-top: 20px;">您还没有预定任何房源哦！</dd>
+                        </dl>
+                    </li>
+                    <!--<li class="yuYue">
+                        <dl class="yuyue-oneHt">
+                            <dt><img src="images/fangImages.jpg"/></dt>
+                            <dd class="yuyue-houseXqing">
+                                <p class="yuyue-fangName">东城鼓楼大街-武夷绿洲-3室2厅1卫-78m²<span>整租</span></p>
+                                <p class="yuyue-houseGeju">
+                                    <strong><b>5000</b>元/月</strong>
+                                </p>
+                                <p class="yuyue-zhuangTai">状态：待签约···</p>
+                            </dd>
+                            <dd class="yuyue-chakan">
+                                <span name="lijiQianYue">立即签约</span>
+                                &lt;!&ndash;<a href="javaScript:;">查看详情 >></a>&ndash;&gt;
+                            </dd>
+                        </dl>
+                    </li>-->
+                </ul>
+            </div>
+            <!----我的预定  end------>
+            <!----我的合同信息------>
+            <div class="personalContent hetongCon" id="hetongCon" style="display: none;">
+                <h3 class="hetongH3"><span>我的合同</span></h3>
+                <ul class="htCon" id="houseHeTong">
+                    <!--<li class="heTong">
+                        <div class="houseXiangQing">
+                            <div class="heTitle">
+                                <strong class="fangDingdan">订单号：414652319845</strong>
+                                <span class="fangTimeQian">签约时间：2015.03.12</span>
+                                <span class="fangZhuangTai">签约成功</span>
+                            </div>
+                            <dl class="oneHt">
+                                <dt><img src="images/fangImages.jpg" /></dt>
+                                <dd class="houseXq">
+                                    <p class="fangName">武夷绿洲<span>整租</span></p>
+                                    <p class="houseGeju">43栋－1单元－203
+                                        <strong><b>5000</b>元/月
+                                            <span>押一付三</span>
+                                        </strong>
+                                    </p>
+                                    <p class="fangTime">合同周期：2015.06.21－2016.06.20</p>
+                                </dd>
+                                <dd class="lookXq">
+                                    <a href="javaScript:;">查看详情 >></a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="htContent">
+                            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                                <ul class="layui-tab-title">
+                                    <li class="layui-this" name="myGuanJia">管家</li>
+                                    <li name="myZhangDan">账单</li>
+                                    <li name="myWeiXiu">维修</li>
+                                    <li name="myTouSu">投诉</li>
+                                </ul>
+                                <div class="layui-tab-content" style="height: auto;">
+                                    <div class="layui-tab-item layui-show" name="showGuanJia"></div>
+                                    <div class="layui-tab-item" name="showZhangDan"></div>
+                                    <div class="layui-tab-item" name="showWeiXiu"></div>
+                                    <div class="layui-tab-item" name="showTouSu"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+            <!----我的合同信息 end------>
+            <!----我的优惠券------>
+            <div class="personalContent myYouHuiJuan" id="youHuiJuanCon" style="display: none;">
+                <h3 class="youHuiJuan-H3"><span>我的优惠券</span></h3>
+                <div class="youhuijuan">
+                    <img src="images/youhuijuan/noYouHuiJuan.png" />
+                    <p>您还没有优惠券哦！</p>
+                </div>
+            </div>
+            <!----我的优惠券   end------>
+            <!----我的资料------>
+            <div class="personalContent ziLiao" id="ziLiaoCon" style="display: none;">
+                <h3 class="ziLiao-H3"><span>我的资料</span></h3>
+                <div class="ziLiaoCon">
+                    <div class="geRenPic">
+                        <img src="images/touxiang02.jpg" />
+                    </div>
+                    <div id="geRenCon">
+                        <!--<dl>
+                            <dt>姓名：</dt>
+                            <dd>离合肥的健身卡换房间</dd>
+                        </dl>
+                        <dl>
+                            <dt>电话：</dt>
+                            <dd>15698548523</dd>
+                        </dl>
+                        <dl>
+                            <dt>生日：</dt>
+                            <dd>1596-12-56</dd>
+                        </dl>-->
+                    </div>
+
+                </div>
+                <!--<dl>
+                    <dt id="touXiangPic"><img src="images/touxiang02.jpg" /></dt>
+                    <dd><a href="javaScript:;" id="uploadPic">头像上传</a></dd>
+                </dl>
+                <div class="ziLiaoLei">
+                    <div class="layui-form" id="xiuGaiZiLiao">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">昵称</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="nickName" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">性别</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="sex" value="1" title="男" checked="">
+                                <input type="radio" name="sex" value="0" title="女">
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-inline">
+                            <label class="layui-form-label">生日</label>
+                            <div class="layui-input-block">
+                                <input style="width: 190px;" type="text" name="shengr" lay-verify="date" placeholder="年-月-日" autocomplete="off" class="layui-input" onclick="layui.laydate({elem: this})">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">职业</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="zhiye" lay-verify="email" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">爱好</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="aihao"  autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <button class="layui-btn layui-btn-warm" id="baocun" style="width:80px; font-size: 14px; background: #008cd6; margin-left: 160px;">保存</button>
+                    </div>
+                </div>-->
+            </div>
+            <!----我的资料  end------>
+        </div>
+    </div>
+</div>
+<!------- footer ------->
+<div id="footBottom"></div>
+</body>
+<script type="text/javascript" src="public/common/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="public/ext/layui/layui.all.js"></script>
+<script type="text/javascript" src="public/ext/webUploader/webuploader.js"></script>
+<script type="text/javascript" src="public/common/js/public.js?v=20170913"></script>
+<script type="text/javascript" src="public/common/js/publicDate.js?v=20170913"></script>
+<script type="text/javascript" src="js/api/geRenCenterApi.js?v=20170913"></script>
+<script type="text/javascript" src="js/geRenCenter.js?v=20170913"></script>
+<script>
+    var hash = location.hash;
+    if(hash){
+        geRen(hash.match(/\d+/)[0]);
+    }
+    $('.geRenClick').click(function(){
+        $(this).addClass("conActive").siblings().removeClass("conActive");
+        geRen($(this).index());
+    });
+    function geRen(index){
+        $('.geRenClick').siblings('.geRenClick').eq(index).addClass("conActive").siblings().removeClass("conActive");
+        $('.personalContent').siblings('.personalContent').hide().end().eq(index).show();
+    }
+</script>
+</html>

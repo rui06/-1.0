@@ -1,0 +1,50 @@
+.rwzDetailCon{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #E6E6E6;
+    background: #ffffff;
+    overflow: hidden;
+}
+.rwzIframeCon{
+    width: 1200px;
+    height: auto;
+    line-height: 28px;
+    font-size: 16px;
+    text-indent: 2em;
+    background: #ffffff;
+    overflow: hidden;
+    margin: 0 auto 30px;
+}
+.rwzDetails{
+    width: 1200px;
+    height: auto;
+    margin: 50px auto 50px;
+    overflow: hidden;
+}
+.rwzDetails h3{
+    height: 24px;
+    line-height: 24px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.rwzDetails h3 strong{
+    padding-right: 15px;
+    border-right: 1px solid #8A8A8A;
+}
+.rwzDetails h3 span{
+    font-weight: 100;
+    padding-left: 15px;
+}
+.rwzTime{
+    font-size: 14px;
+    color: #929292;
+}
+.detailCon{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    line-height: 26px;
+    font-size: 14px;
+    margin-top: 20px;
+    overflow: hidden;
+}

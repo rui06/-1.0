@@ -1,0 +1,179 @@
+.geRenContent{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #DFDFDF;
+    overflow: hidden;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: 30px auto 30px;
+    overflow: hidden;
+}
+.conLeft{
+    width: 230px;
+    height: auto;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+/*头像*/
+.touXiang{
+    width: 120px;
+    height: auto;
+    margin: 25px auto 0;
+    overflow: hidden;
+}
+.touXiang dt{
+    width: 100%;
+    height: 120px;
+    border: 0px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.touXiang dt img{
+    width: 120px;
+    height: 120px;
+}
+.touXiang dd{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    overflow: hidden;
+}
+/*列表*/
+.conLeft ul{
+    width: 100%;
+    height: auto;
+    margin: 20px 0 40px 0;
+    overflow: hidden;
+}
+.conLeft ul li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background: url("../images/geren.jpg") no-repeat 55px center;
+    text-indent: 4.5em;
+    cursor: pointer;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.conLeft ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+.conLeft ul li a:hover{
+    color: #FD9001;
+}
+.conLeft ul li .conActive{
+    color: #FD9001;
+}
+.conRight{
+    width: 955px;
+    height: auto;
+    min-height: 500px;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.conRight{
+    width: 955px;
+    height: auto;
+    min-height: 500px;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.gerenH3{
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 100;
+    overflow: hidden;
+}
+/*我的资料*/
+.ziLiao{
+    width: 885px;
+    height: auto;
+    min-height: 500px;
+    padding: 20px 35px;
+    overflow: hidden;
+}
+.ziLiao dl{
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ziLiao dl dt{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    overflow: hidden;
+}
+.ziLiao dl dt img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+.ziLiao dl dd{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.ziLiao dl dd a{
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    background: #008cd6;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ziLiaoLei{
+    width: 450px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ziLiaoLei p{
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    overflow: hidden;
+}
+.ziLiaoLei p span{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.ziLiaoLei p input{
+    width: 356px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    text-indent: 1em;
+    border: 1px solid #E0E0E0;
+    background: #ffffff;
+    border-radius: 2px;
+}

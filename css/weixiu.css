@@ -1,0 +1,84 @@
+.weiXiuContent{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.addWeiXiu{
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    background: #008cd6;
+    border-radius: 3px;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -50px;
+    overflow: hidden;
+}
+.addwx{
+    display: none;
+}
+.weiXiu{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.weiXiuTiao{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dashed #cccccc;
+    padding: 5px 0 15px 0;
+    overflow: hidden;
+}
+.weiXiuTime{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.weiXiuTime span{
+    width: 600px;
+    font-size: 14px;
+    color: #000000;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.weiXiuTime strong{
+    width: 260px;
+    font-size: 14px;
+    text-align: right;
+    color: #333333;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.weiXiuTime .weiXiuDaichuli{
+    color: #008cd6;
+}
+.weiXiuNeirong{
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+    overflow: hidden;
+}
+.weiXiuPic{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.weiXiuPic img{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    margin:8px 8px 0 0;
+}

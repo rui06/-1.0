@@ -1,0 +1,89 @@
+.rwzContent{
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+.con{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.con li{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dashed #D0D0D0;
+    overflow: hidden;
+}
+.con .endLi{
+    border: 0;
+}
+.con li dl{
+    width: 100%;
+    height: auto;
+    margin: 55px 0;
+    overflow: hidden;
+}
+.con li dl dt{
+    width: 280px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+.con li dl dt img{
+    width: 280px;
+    height: 300px;
+}
+.con li dl dd{
+    width: 800px;
+    height: 301px;
+    float: left;
+    margin-left: 40px;
+    overflow: hidden;
+}
+.con li dl dd h3{
+    height: 24px;
+    line-height: 24px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.con li dl dd h3 strong{
+    padding-right: 15px;
+}
+.con li dl dd h3 span{
+    font-weight: 100;
+    padding-left: 15px;
+}
+.rwzTime{
+    font-size: 14px;
+    color: #929292;
+}
+.rwzList{
+    height: 160px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+/*.con li dl dd p{
+    width: 100%;
+    height: 179px;
+    line-height: 26px;
+    font-size: 14px;
+    margin: 18px 0 14px 0;
+    overflow: hidden;
+}*/
+.con li dl dd a{
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #008cd6;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #e1e1e1;
+    display: block;
+    overflow: hidden;
+}

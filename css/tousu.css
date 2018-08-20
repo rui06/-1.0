@@ -1,0 +1,103 @@
+.touSuContent{
+    width: 870px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.addTouSu{
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    background: #008cd6;
+    border-radius: 3px;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -50px;
+    overflow: hidden;
+}
+.addts{
+    display: none;
+}
+.touSuContents{
+    resize: vertical;
+    width: 580px;
+    height: 300px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+    background: #ffffff;
+    margin: 0 auto;
+    display: block;
+    border: 0px;
+    margin-top: 5px;
+    overflow-y: scroll;
+}
+.layui-layer-rim {
+    border: 2px solid #e6b36c;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.touSu{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.touSu-Tiao{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dashed #cccccc;
+    padding: 5px 0 15px 0;
+    overflow: hidden;
+}
+.touSu-Time{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.touSu-Time span{
+    width: 600px;
+    font-size: 14px;
+    color: #000000;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.touSu-Time strong{
+    width: 260px;
+    font-size: 14px;
+    text-align: right;
+    color: #333333;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.touSu-Time .touSu-Daichuli{
+    color: #008cd6;
+}
+.touSu-Neirong{
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+    overflow: hidden;
+}
+.touSu-Pic{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.touSu-Pic img{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    margin:8px 8px 0 0;
+}

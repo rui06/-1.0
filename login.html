@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录</title>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/mian_logo.ico">
+    <link rel="stylesheet" type="text/css" href="public/ext/layui/css/layui.css?20170629_1" />
+    <link rel="stylesheet" type="text/css" href="css/login.css?20170629_1" />
+</head>
+<body>
+<!--<div class="logo">
+    <img src="images/logo.png" />
+</div>-->
+<div class="shellbox login">
+
+    <div class="tabwrap">
+        <ul>
+            <li>登  录</li>
+            <!--<li data-href="register.html">注 册</li>
+            <li><a href="mobile.html" target="_blank" style="color: white;">APP下载</a></li>-->
+        </ul>
+    </div>
+
+    <div class="contentBox clearfix">
+        <div class="frmbox">
+            <form id="loginForm" action="" method="post">
+                <div class="frmWrap">
+                    <div class="rowWrap clearfix">
+                        <div class="fieldBox">
+                            手机号：
+                        </div>
+                        <div class="controlBox">
+                            <input type="text" class="control required pull" size="25"  name="name" id="phone" value="" placeholder="请输入签约手机号" />
+                        </div>
+                    </div>
+                    <div id="miMa" class="rowWrap clearfix" style="display: none;">
+                        <div class="fieldBox">
+                            密 码：
+                        </div>
+                        <div class="controlBox">
+                            <input type="password" class="control required pull" placeholder="请输入身份证后6位" size="25" name="password" id="shenf"  />
+                        </div>
+                    </div>
+                    <div id="yanZhengMa" class="rowWrap clearfix">
+                        <div class="fieldBox">
+                            验证码：
+                        </div>
+                        <div class="controlBox yangZMLogin">
+                            <input type="text" class="control required pull" placeholder="请输入验证码" size="25" name="yanZhengMa" id="yanZhengMaText"  />
+                            <button type="button" id="showYZM" class="yanZhengMa">验证码</button>
+                        </div>
+                    </div>
+                    <p class="qieHuan"><a id="qieHuanDengLu" yanZheng="1" href="javaScript:;">租客登录</a></p>
+                    <!--<div class="rowWrap clearfix" style="padding: 0;">
+                        <div class="fieldBox">
+
+                        </div>
+                        <div class="controlBox">
+                            <input id="autoLogin" type="checkbox"/> <span style="font-size: 14px;">自动登录</span>
+									<span style="float: right;font-size: 14px;">
+										<a href="forgetPassword.html" class="forgot">忘记密码？</a>
+									</span>
+                        </div>
+                    </div>-->
+                    <div class="rowWrap clearfix">
+                        <div class="fieldBox">
+
+                        </div>
+                        <div class="controlBox">
+                            <button id="login_btn" type="button" class="btn primary pull"><a href="javaScript:;">登 录</a></button>
+                        </div>
+                    </div>
+
+                    <!--<div class="rowWrap clearfix">
+                        <div class="fieldBox">
+
+                        </div>
+                        <div class="controlBox" style="text-align: right;font-size: 14px; margin-top: -15px;">
+                            没有账号？<a href="register.html">立即注册</a>
+                        </div>
+                    </div>-->
+
+                </div>
+            </form>
+        </div>
+        <div class="tipbox">
+            <ul>
+                <li class="mainTitle"><span class="cus-icon-checkmark"></span> 100%真实房源</li>
+                <li class="detailContent"><span style="">所有线上房源均现场实勘，实拍图片，信息真实。</span></li>
+                <li class="mainTitle"><span class="cus-icon-checkmark"></span> 打造品质公寓</li>
+                <li class="detailContent"><span style="">装修精美，家电齐全，省力省心，拎包即住。</span></li>
+                <li class="mainTitle"><span class="cus-icon-checkmark"></span> 管家一对一服务</li>
+                <li class="detailContent"><span style="">高素质的房屋管家一对一为您提供优质服务。</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="public/common/js/jquery-1.8.0.min.js?20170629_1"></script>
+<script src="public/ext/layui/layui.all.js?20170629_1"></script>
+<script src="public/ext/base.js?20170629_1"></script>
+<script src="public/ext/cStorage.js?20170629_1"></script>
+<script src="public/ext/data.js?20170629_1"></script>
+<script src="public/common/js/public.js?20170629_1"></script>
+<script type="text/javascript">
+    var isIE=!!window.ActiveXObject;
+    var isIE6=isIE&&!window.XMLHttpRequest;
+    var isIE8=isIE&&!!document.documentMode;
+    var isIE7=isIE&&!isIE6&&!isIE8;
+    if(isIE6||isIE7||isIE8){
+        top.UI.alert("您的浏览器版本过低，为了更好的用户体验，请更新您的浏览器：<br/><a href='http://dlsw.baidu.com/sw-search-sp/soft/9d/14744/ChromeStandaloneSetup43.0.2357.130.1435047900.exe' target='_blank' style='color: #008cd6;'>google浏览器</a><br/><a href='http://dlsw.baidu.com/sw-search-sp/soft/0d/14754/sogou_explorer_V6.0.5.17681_setup.1438915918.exe' target='_blank' style='color: #008cd6;'>搜狗浏览器</a><br/><a href='http://dlsw.baidu.com/sw-search-sp/soft/3f/17451/360se_V7.1.1.800_setup.1437964953.exe' target='_blank' style='color: #008cd6;'>360安全浏览器</a> ");
+    }
+    function submitFormOnEnter(event, obj) {
+        if (event.which == 13) {
+            $(obj).closest('form').submit();
+        }
+    }
+</script>
+<script src="public/ext/login.js?20170629_1"></script>
+<script type="text/javascript" src="js/api/loginApi.js?20170629_1"></script>
+</body>
+</html>

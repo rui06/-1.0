@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>租前问答</title>
+    <link rel="shortcut icon" href="images/mian_logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/common.css?20170629_1"/>
+    <link rel="stylesheet" type="text/css" href="public/ext/layui/css/layui.css?20170629_1" />
+    <link rel="stylesheet" type="text/css" href="css/zqwd.css?20170629_1"/>
+</head>
+<body>
+<!------- 头部 ------->
+<div id="header_item"></div>
+<div class="center">
+    <div class="bj_content">
+        <div class="question">
+            <h2>常见问题</h2>
+            <div class="ask" id="myQuestions">
+                <h3><a href="#tiWen">我要提问</a></h3>
+            </div>
+        </div>
+        <div class="blank">
+            <div class="dian">
+            </div>
+            <div class="wenda">
+                <div class="wenda1">
+                    <h3><span>1</span>棉花公寓简介</h3>
+                    <p>我们是一家年轻的南京本土长租公寓运营商，采用互联网O2O租房模式，以官网为平台，展示真实可靠的房源及公开透明的底价，专注于为南京都市白领提供创新优质的租住服务。</p>
+                </div>
+                <div class="wenda1">
+                    <h3><span>2</span>网站的房源都是真实的吗？照片是实拍吗？</h3>
+                    <p>棉花公寓保证，你在官网上看到的每一间房都是真实的，照片也都是我们管家亲自拍摄，保证一房一图，100%真实房源。</p>
+                </div>
+                <div class="wenda1">
+                    <h3><span>3</span>租棉花公寓的房子要不要服务费/中介费？</h3>
+                    <p>作为一家互联网公司，棉花公寓承诺永远不收中介费。<br/>目前我们也没有收取任何的服务费用。
+                    </p>
+                </div>
+                <div class="wenda1">
+                    <h3><span>4</span>棉花公寓水电煤费怎么收取的？</h3>
+                    <p>除房租外，棉花公寓有一个生活费，生活费170元/月，包含你一个月内的水费、煤气费、宽带费、物业费。不管你一个月内用多少，都是170元。电费棉花公寓是不收取的，房屋产生的电费，与室友平摊好之后，将费用通过各种渠道缴费到相应电力公司。</p>
+                </div>
+                <div class="wenda1">
+                    <h3><span>5</span>预约看房之后，多久会联系我？</h3>
+                    <p>通过棉花公寓官网、微信公众号等预约看房，我们管家将在6小时内电话联系你。在官网和公众号预约时，可以填写你的租房需求，以便我们的管家为您推荐最合适的房源。</p>
+                </div>
+                <div class="wenda1">
+                    <h3><span>6</span>入住棉花公寓，安全吗？与我合租的都是什么人？</h3>
+                    <p>棉花公寓在公寓环境和租客认证上做了大量的工作来确保入住安全。对于室友的选择，我们是有严格要求的，为了确保其他室友的安全，在棉花公寓身份认证上，身份证、工作证明在入住时是一个都不能少的。
+                        在房源上，我们对小区环境上进行了大量的把关，大多数的小区都有24小时保安站岗把守，小区内监控视频以及健全的物业管理。</p>
+                </div>
+                <div class="wenda1">
+                    <h3><span>7</span>入住棉花公寓会跟我签订正规租赁协议吗？</h3>
+                    <P>我们与每一个租客都会签订租房合同，双方的租赁协议、条款须知都会在合同中写明，并且在签约时，棉花公寓管家也会与您把每一条款项梳理一遍，让您安住无忧。</P>
+                </div>
+                <div class="wenda1">
+                    <h3><span>8</span>家电、家居、公共设施质量如何，有wifi吗？</h3>
+                    <p>棉花公寓的房源都是统一装修的，家电均采用美的、海尔等品牌家电，保证质量安全可靠，家具也都是我们统一定制的，在您入住期间发现家电家居自然损坏，我们都会及时免费上门维修，并且我们给每套房子配备高速电信宽带，WIFI覆盖每一间卧室。</p>
+                </div>
+                <div class="wenda1">
+                    <h3><span>9</span>与我合租的是异性吗？</h3>
+                    <p>棉花公寓目前尚未推出单独男生/女生公寓，如果您对舍友性别有要求，可以联系我们的管家，帮您匹配合适的房间。棉花公寓的租客均由我们统一认证的，都是靠谱的、有趣的青年。</p>
+                </div>
+                <div class="wenda1">
+                    <h3><span>10</span>棉花公寓一个房间能几个人？</h3>
+                    <p>在房间入住人数上，我们是有严格要求的，房间放置1.2M床的小房间，只允许入住一人，如果是1.5M的大房间，最多允许入住两人。为了保证其他室友的安全，如果入住人数超过规定人数，我们将进行清退处理。</p>
+                </div>
+            </div>
+        </div>
+        <!--<div id="tiWen">
+            <h3>提问
+                <a href="JavaScript:" id="close">关闭</a>
+            </h3>
+            <textarea rows="6" id="con_input" placeholder="请输入您想询问的问题，管家会尽快为您解答"></textarea>
+            <textarea rows="1" id="con_phone" placeholder="留下您的联系方式，方便及时回复"></textarea>
+            <button type="submit" id="bunTijiao">我要提问</button>
+        </div>
+        <div id="mask"></div>-->
+        <div class="layui-form" id="tiWen" style="display: none;">
+            <div class="layui-form-item layui-form-text" style="margin-top: 10px;">
+                <label class="layui-form-label">询问内容:</label>
+                <div class="layui-input-block">
+                    <textarea id="con_input" style="width: 350px;height: 140px;" placeholder="请输入您想询问的问题，管家会尽快为您解答" class="layui-textarea"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">电话:</label>
+                <div class="layui-input-inline">
+                    <input id="con_phone" style="width: 350px;" type="tel" name="phone" lay-verify="phone" autocomplete="off" class="layui-input" placeholder="留下您的联系方式，方便及时回复">
+                </div>
+            </div>
+            <button id="bunTijiao" style="display: block;margin: 0 auto; background: #008cd6;" class="layui-btn layui-btn-warm">我要提问</button>
+        </div>
+    </div>
+</div>
+<div id="footer_item"></div>
+</body>
+<script type="text/javascript" src="public/common/js/jquery-1.8.0.min.js?20170629_1"></script>
+<script type="text/javascript" src="public/common/js/public.js?20170629_1"></script>
+<script type="text/javascript" src="public/ext/layui/layui.all.js?20170629_1"></script>
+<script type="text/javascript" src="js/api/zqwdApi.js?20170629_1"></script>
+<script type="text/javascript" src="js/zqwd.js?20170629_1"></script>
+
+</html>

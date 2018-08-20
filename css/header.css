@@ -1,0 +1,147 @@
+.header{
+    width: 100%;
+    height: 80px;
+    min-width: 1200px;
+    /* border-bottom: 2px solid #008cd6; */
+    padding: 10px 0;
+    position: relative;
+}
+.logo{
+    width: 48%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    margin-right: 2%;
+}
+.logo h1 a{
+    width: auto;
+    line-height: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.logo img{
+    width: auto;
+    height: auto;
+    border: 0;
+    overflow: hidden;
+}
+.logo h1{
+    width: auto;
+    height: 80px;
+    overflow: hidden;
+    float:right;
+}
+.headerNav{
+    width: 50%;
+    float:left;
+    height: 80px;
+    line-height: 60px;
+}
+.headerNav li{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    overflow: hidden;
+    cursor:pointer;
+}
+.headerNav li a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    /*color: #ff9102;*/
+    color: #000000;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.headerNav li a:hover{
+    color: #1FB7B6;
+}
+.headerNav li .headActive{
+    color: #1FB7B6;
+    border-bottom: 2px solid #1FB7B6;
+}
+/*.shengHuo .zuKe{
+    width: 100px;
+}*/
+.zuKeShengHuo{
+    width: 90px;
+    background: url("../images/arrow_down.png")no-repeat right center;
+    display: inline-block;
+    vertical-align: top;
+}
+.zuKe{
+    position: relative;
+}
+.zuKe span{
+    width: 15px;
+    height: 10px;
+    background: url("../images/dropDown.png")no-repeat center top;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+}
+.renWu{
+    width: 80px;
+    height: auto;
+    border: 1px solid #F8F8F8;
+    overflow: hidden;
+    z-index: 99999;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 10px 10px;
+    position: absolute;
+    right: 355px;
+    top: 50px;
+    display: none;
+}
+.renWu a{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333333;;
+    text-decoration: none;
+    border-bottom: 1px solid #f8f8f8;
+    display: block;
+}
+.renWu a:hover{
+    color: #008cd6;
+    border-bottom: 1px solid #008cd6;
+}
+.geRenZX{
+    width: 70px;
+    height: auto;
+    border: 1px solid #F8F8F8;
+    overflow: hidden;
+    z-index: 99999;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 10px 10px;
+    position: absolute;
+    right: 32px;
+    top: 50px;
+    display: none;
+}
+.geRenZX a{
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #f8f8f8;
+    display: block;
+}
+.geRenZX a:hover{
+    color: #008cd6;
+    border-bottom: 1px solid #008cd6;
+}

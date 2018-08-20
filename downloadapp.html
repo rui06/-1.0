@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载app</title>
+    <link rel="shortcut icon" href="images/mian_logo.ico">
+    <link rel="stylesheet" type="text/css" href="public/common/css/public.css?20170629_1">
+    <link rel="stylesheet" type="text/css" href="public/ext/banner/banner.css?20170629_1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/certify.css">
+    <link rel="stylesheet" type="text/css" href="css/downloadapp.css?v=20180109">
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+<body style="background: #ffffff;">
+<!-- 头部 --> 
+<div id="header_item"></div>
+<!-- banner -->
+<div class="downloadbanner">
+<img src="images/download/downloadbanner.png"/>
+    <div class="down-btn">
+        <div class="down-left">
+            <img src= "images/download/ioser.jpg"/>
+        </div>
+        <div class="down-right">
+            <a class="ad-btn"><i></i>安卓下载</a><br/>
+            <a class="ios-btn"><i></i>苹果下载</a>  
+        </div>
+    </div>
+    <div class="down-img">
+        <img src= "images/download/bannerpic01.png"/>
+    </div>
+</div>
+<!-- 房间实拍 -->
+<div class="roomFilm">
+    <div class="con-title">
+        <h2><i class="line-left"></i>找房签约售后，<span>APP全聚合服务</span><i class="line-right"></i></h2>
+        <h3>APP Total Aggregation Service</h3>
+    </div>
+    <div class="content">
+        <ul class="three-list">
+            <li>
+                <img src="images/download/shouhou01.png">
+                <h3>找房看房在线预约</h3>
+            </li>
+            <li>
+                <img src="images/download/shouhou02.png">
+                <h3>电子签约房租月付</h3>
+            </li>
+            <li>
+                <img src="images/download/shouhou03.png">
+                <h3>免费维修双周保洁</h3>
+            </li>
+            <li>
+                <img src="images/download/shouhou04.png">
+                <h3>在线客服服务管家</h3>
+            </li>
+            <li>
+                <img src="images/download/shouhou05.png">
+                <h3>会员体系会员特权</h3>
+            </li>
+            <li>
+                <img src="images/download/shouhou06.png">
+                <h3>棉花圈子社交活动</h3>
+            </li>
+        </ul>
+    </div>
+    <div class="con-title">
+        <h2><i class="line-left"></i>全方位覆盖<span>租客业主需求</span><i class="line-right"></i></h2>
+        <h3>Cover the needs of the tenant owner</h3>
+    </div>
+    <div>
+        <!-- <div id="certify">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/download/footerpic01.png" /></div>
+                    <div class="swiper-slide"><img src="images/download/footerpic02.png" /></div>
+                    <div class="swiper-slide"><img src="images/download/footerpic03.png" /></div>
+                    <div class="swiper-slide"><img src="images/download/footerpic04.png" /></div>
+                    <div class="swiper-slide"><img src="images/download/footerpic05.png" /></div>
+                </div>
+            </div>
+        </div> -->
+        <div class="content">
+            <div class="down-piclist">
+                <div class="down-pic01"><img src="images/download/footerpic01.png" /></div>
+                <div class="down-pic02"><img src="images/download/footerpic02.png" /></div>
+                <div class="down-pic03"><img src="images/download/footerpic03.png" /></div>
+                <div class="down-pic04"><img src="images/download/footerpic04.png" /></div>
+                <div class="down-pic05"><img src="images/download/footerpic05.png" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="down-footerbanner">
+        <img src="images/download/footer-banner.png"/>
+    </div>
+</div>
+
+<!-- footer -->
+<div id="footBottom"></div>
+<script>
+certifySwiper = new Swiper('#certify .swiper-container', {
+    watchSlidesProgress: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 5,
+    autoplay: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        //clickable :true,
+    },
+    on: {
+        progress: function(progress) {
+            for (i = 0; i < this.slides.length; i++) {
+                var slide = this.slides.eq(i);
+                var slideProgress = this.slides[i].progress;
+                modify = 1;
+                if (Math.abs(slideProgress) > 1) {
+                    modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                }
+                translate = slideProgress * modify * 260 + 'px';
+                scale = 1 - Math.abs(slideProgress) / 5;
+                zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                slide.css('zIndex', zIndex);
+                slide.css('opacity', 1);
+                if (Math.abs(slideProgress) > 3) {
+                    slide.css('opacity', 0);
+                }
+            }
+        },
+        setTransition: function(transition) {
+            for (var i = 0; i < this.slides.length; i++) {
+                var slide = this.slides.eq(i)
+                slide.transition(transition);
+            }
+
+        }
+    }
+
+})
+</script>
+</body>
+<script type="text/javascript" src="public/common/js/jquery-1.8.0.min.js?20170629_1"></script>
+<script type="text/javascript" src="public/ext/banner/belatedPNG.js?20170629_1"></script>
+<script type="text/javascript" src="public/ext/banner/main.js?20170629_1"></script>
+<script src="public/ext/jwplayer/jwplayer.js?20170629_1"></script>
+<script type="text/javascript" src="public/common/js/public.js?20170629_1"></script>
+<script type="text/javascript" src="js/index.js?20170629_1"></script>
+<script type="text/javascript" src="js/api/indexApi.js?v=20180510"></script>
+</html>

@@ -1,0 +1,116 @@
+.footer{
+	width: 100%;
+	height: auto;
+	background: #38373A;
+	overflow: hidden;
+	border-bottom: 10px solid #1FB7B6;
+}
+.foot{
+	width: 1200px;
+	height: 165px;
+	margin: 100px auto 20px;
+	overflow: hidden;
+}
+.footCon{
+	width: auto;
+	height: auto;
+	float: left;
+	padding-right: 50px;
+}
+.foot dl{
+	width: 100px;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 110px;
+	overflow: hidden;
+}
+.foot dl dt{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	color: #1FB7B6;
+	font-size:18px ;
+	font-weight: 600;
+	text-align: center;
+	overflow: hidden;
+}
+.foot dl dd{
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+	font-size: 16px;
+	text-align: center;
+	overflow: hidden;
+}
+.foot dl dd a{
+	color: #fff;
+	text-decoration: none;
+}
+.foot dl dd a:hover{
+	color: #1FB7B6;
+}
+.erWeiMa{
+	width: auto;
+	height: 140px;
+	float: right;
+	overflow: hidden;
+}
+.erWeiMaLeft{
+	width: 140px;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+.erWeiMaLeft img{
+	width: 140px;
+	height: 140px;
+}
+.erWeiMaRight{
+	width: 200px;
+	height: 100%;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 25px;
+	margin-top: 35px;
+	overflow: hidden;
+}
+.erWeiMaRight strong{
+	height: 26px;
+	line-height: 26px;
+	font-size:18px ;
+	font-weight: 600;
+	text-align: right;
+	color:#fff;
+}
+.erWeiMaRight p{
+	height: 26px;
+	line-height: 28px;
+	font-size:16px ;
+	font-weight: 100;
+	color: #fff;
+	text-align: right;
+}
+.erWeiMaRight span{
+	height: 26px;
+	line-height: 26px;
+	font-size:16px ;
+	font-weight: 100;
+	text-align: right;
+	color: #fff;
+}
+.foot_end{
+	width: 100%;
+	height: auto;
+	line-height: 80px;
+	font-size: 14px;
+	text-align: center;
+	margin: 20px 0 10px 0;
+	color: #A5A5A5;
+}
+.foot_end a{
+	color: #A5A5A5;
+    margin-left: 50px;
+}

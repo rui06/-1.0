@@ -1,0 +1,642 @@
+.geRenContent{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #DFDFDF;
+    overflow: hidden;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: 30px auto 30px;
+    overflow: hidden;
+}
+.conLeft{
+    width: 230px;
+    height: auto;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+/*头像*/
+.touXiang{
+    width: 100%;
+    height: auto;
+    margin: 25px auto 0;
+    overflow: hidden;
+}
+.touXiang dt{
+    width: 120px;
+    height: 120px;
+    border: 0;
+    border-radius: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.touXiang dt img{
+    width: 120px;
+    height: 120px;
+}
+.touXiang dd{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    overflow: hidden;
+}
+/*列表*/
+.geRenLieBiao{
+    width: 100%;
+    height: auto;
+    margin: 20px 0 40px 0;
+    overflow: hidden;
+}
+.geRenLieBiao a{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #000000;
+    background: url("../images/geren.jpg") no-repeat 55px center;
+    text-indent: 4.5em;
+    cursor: pointer;
+    margin-top: 25px;
+    display: block;
+    overflow: hidden;
+}
+.geRenLieBiao a:hover{
+    color: #FD9001;
+}
+.geRenLieBiao .conActive{
+    color: #FD9001;
+}
+/*.conLeft ul{
+    width: 100%;
+    height: auto;
+    margin: 20px 0 40px 0;
+    overflow: hidden;
+}
+.conLeft ul li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background: url("../images/geren.jpg") no-repeat 55px center;
+    text-indent: 4.5em;
+    cursor: pointer;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.conLeft ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+.conLeft ul li:hover{
+    color: #FD9001;
+}
+.conActive{
+    color: #FD9001;
+}*/
+.conRight{
+    width: 955px;
+    height: auto;
+    min-height: 530px;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    overflow: hidden;
+}
+/*我的合同*/
+.hetongCon{
+    width: 925px;
+    height: auto;
+    padding: 5px 15px;
+    overflow: hidden;
+}
+.hetongH3{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #008cd6;
+    border-bottom: 1px solid #008cd6;
+    overflow: hidden;
+}
+.hetongH3 span{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 3px solid #008cd6;
+}
+.houseXiangQing{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.htCon{
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+.htCon .heTong{
+    width: 923px;
+    height: auto;
+    border: 1px solid #dddfdc;
+    border-radius: 3px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.heTitle{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dashed #dddfdc;
+}
+.fangDingdan{
+    width: 300px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}
+.fangTimeQian{
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fangZhuangTai{
+    width: 280px;
+    text-align: right;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+.oneHt{
+    width: 903px;
+    height: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+.oneHt dt{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.oneHt dt img{
+    width: 100px;
+    height: 100px;
+}
+.oneHt dd{
+    width: auto;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.oneHt .houseXq{
+    width: 570px;
+}
+.houseXq p{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.fangName{
+    font-size: 16px;
+    color: #000000;
+}
+.fangName span{
+    font-size: 14px;
+    color: #ffffff;
+    background: #008cd6;
+    border-radius: 3px;
+    padding:2px 5px;
+    margin-left: 20px;
+}
+.houseGeju{
+    font-size: 14px;
+    color: #666666;
+}
+.houseGeju strong{
+    font-weight: 100;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+}
+.houseGeju strong b{
+    color: #008cd6;
+    font-size: 16px;
+}
+.houseGeju strong span{
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 8px;
+    margin-left: 30px;
+}
+.fangTime{
+    color: #999999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.lookXq a{
+    width: 190px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 14px;
+    text-align: right;
+    color: #008cd6;
+    display: inline-block;
+    vertical-align: top;
+}
+.htContent{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: none;
+}
+.layui-tab-brief .layui-this{
+    color: #008cd6;
+}
+.layui-tab-brief .layui-this:after
+,.layui-tab-brief .layui-tab-more li.layui-this:after{ border-bottom: 2px solid #008cd6;}
+
+/*我的预约*/
+.yuYueCon{
+    width: 925px;
+    height: auto;
+    overflow: hidden;
+}
+.yuyue-H3{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #008cd6;
+    border-bottom: 1px solid #008cd6;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.yuyue-H3 span{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 3px solid #008cd6;
+}
+.houseXq{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.yuYue{
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cccccc;
+    overflow: hidden;
+}
+.yuYue .heTong{
+    width: 923px;
+    height: auto;
+    border: 1px solid #dddfdc;
+    border-radius: 3px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.yuYueTitle{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dashed #dddfdc;
+}
+.yuyue-yuYueTime{
+    width: 300px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}
+.yuyue-fangTimeQian{
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+.yuyue-fangZhuangTai{
+    width: 280px;
+    text-align: right;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+.yuyue-oneHt{
+    width: 903px;
+    height: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+.yuyue-oneHt dt{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.yuyue-oneHt dt img{
+    width: 100px;
+    height: 100px;
+}
+.yuyue-oneHt dd{
+    width: auto;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.yuyue-oneHt .yuyue-houseXqing{
+    width: 570px;
+}
+.yuyue-houseXqing p{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.yuyue-fangName{
+    font-size: 16px;
+    color: #000000;
+}
+.yuyue-zhuangTai{
+    font-size: 14px;
+    color: #666666;
+    margin-top: 7px;
+}
+.yuyue-fangName span{
+    font-size: 14px;
+    color: #ffffff;
+    background: #008cd6;
+    border-radius: 3px;
+    padding:2px 5px;
+    margin-left: 20px;
+}
+.yuyue-houseGeju{
+    font-size: 14px;
+    color: #666666;
+}
+.yuyue-houseGeju strong{
+    font-weight: 100;
+    display: inline-block;
+    vertical-align: top;
+}
+.yuyue-houseGeju strong b{
+    color: #008cd6;
+    font-size: 16px;
+}
+.yuyue-houseGeju strong span{
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 8px;
+    margin-left: 30px;
+}
+.yuyue-oneHt .yuyue-chakan{
+    width: 190px;
+    height: 100px;
+    font-size: 14px;
+    color: #008cd6;
+    display: inline-block;
+    vertical-align: top;
+}
+.yuyue-chakan span{
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    background: #008cd6;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.yuyue-chakan a{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #008cd6;
+    text-align: right;
+    display: block;
+    float: right;
+    margin-top: 30px;
+    overflow: hidden;
+}
+/*我的资料*/
+.ziLiao-H3{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #008cd6;
+    border-bottom: 1px solid #008cd6;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ziLiao-H3 span{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 3px solid #008cd6;
+}
+.ziLiao{
+    width: 925px;
+    height: auto;
+    min-height: 500px;
+    padding: 5px 15px;
+    overflow: hidden;
+    display: none;
+}
+/*显示资料样式*/
+.ziLiaoCon{
+    width: 200px;
+    height: auto;
+    margin: 100px auto 0;
+}
+.geRenPic{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background: #ffffff;
+    margin: 0 auto 30px;
+    overflow: hidden;
+}
+.geRenPic img{
+    width: auto;
+    max-height: 130px;
+    display: block;
+    margin: 0 auto;
+}
+.ziLiaoCon dl{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.ziLiaoCon dl dt{
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    font-size: 16px;
+    color: #008cd6;
+    display: inline-block;
+    vertical-align: top;
+}
+.ziLiaoCon dl dd{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 16px;
+    color: #555555;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+/*修改资料样式*/
+/*.ziLiao dl{
+    width: 450px;
+    height: auto;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+.ziLiao dl dt{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    overflow: hidden;
+}
+.ziLiao dl dt img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+.ziLiao dl dd{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.ziLiao dl dd a{
+    width: 70px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    background: #008cd6;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}*/
+.ziLiaoLei{
+    width: 400px;
+    height: auto;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+.ziLiaoLei p{
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    overflow: hidden;
+}
+.ziLiaoLei p span{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+.ziLiaoLei p input{
+    width: 356px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    text-indent: 1em;
+    border: 1px solid #E0E0E0;
+    background: #ffffff;
+    border-radius: 2px;
+}
+/*优惠券*/
+.myYouHuiJuan{
+    width: 925px;
+    height: auto;
+    padding: 5px 15px;
+    overflow: hidden;
+}
+.youHuiJuan-H3{
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #008cd6;
+    border-bottom: 1px solid #008cd6;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.youHuiJuan-H3 span{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 3px solid #008cd6;
+}
+.youhuijuan{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.youhuijuan img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 150px auto 0;
+    overflow: hidden;
+}
+.youhuijuan p{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+}

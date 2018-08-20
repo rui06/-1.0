@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>房源列表</title>
+    <link rel="shortcut icon" href="images/mian_logo.ico">
+    <link rel="stylesheet" type="text/css" href="public/ext/layui/css/layui.css?20170629_1" />
+    <link rel="stylesheet" type="text/css" href="css/common.css?20170629_1" />
+    <link rel="stylesheet" type="text/css" href="css/houseList.css?20180108" />
+    <link rel="stylesheet" type="text/css" href="css/list.css?20180108" />
+
+</head>
+<body style="background:#f8f8f8;">
+<div id="header_item"></div>
+<div class="sx">
+    <div class="hd">
+        <ul>
+            <li class="on"><a href="javaScript:;">区域找房</a></li>
+            <li class="ditu"><a href="dtzf.html">地图找房</a></li>
+        </ul>
+        <div class="sear">
+            <i class="searico" id="qieHuan" type="1"></i>
+            <input id="roomName" type="text" placeholder="请输入小区名···" class="text yahei" />
+            <input id="roomId" style="display: none;" type="text" placeholder="请输入房源编号···" class="text yahei" />
+            <a id="selectRoom" href="javaScript:;" class="btn">搜索</a>
+        </div>
+    </div>
+    <!--hd end-->
+    <div class="bd">
+        <ul>
+            <li><span>区域：</span>
+                <p id="quyu">
+                    <!--<a href="javaScript:;" class="cur">不限</a>
+                    <a href="javaScript:;">小店区</a>
+                    <a href="javaScript:;">迎泽区</a>
+                    <a href="javaScript:;">杏花岭区</a>
+                    <a href="javaScript:;">万柏林区</a>-->
+                </p>
+                <input type="hidden" id="quYuName" />
+            </li>
+            <li><span>价格：</span>
+                <p id="price">
+                    <a href="javaScript:;" class="cur" value="-" no-search>不限</a>
+                    <a href="javaScript:;" value="0-500">500元以下</a>
+                    <a href="javaScript:;" value="500-800">500-800元</a>
+                    <a href="javaScript:;" value="800-1200">800-1200元</a>
+                    <a href="javaScript:;" value="1200-1500">1200-1500元</a>
+                    <a href="javaScript:;" value="1500-2000">1500-2000元</a>
+                    <a href="javaScript:;" value="2000-">2000以上</a>
+                </p>
+                <input type="hidden" id="zuJin" />
+            </li>
+            <li><span>户型：</span>
+                <p id="huXing">
+                    <a href="javaScript:;" class="cur" value="" no-search>不限</a>
+                    <a href="javaScript:;" value="1">一室</a>
+                    <a href="javaScript:;" value="2">两室</a>
+                    <a href="javaScript:;" value="3">三室</a>
+                    <a href="javaScript:;" value="4">四室</a>
+                    <a href="javaScript:;" value="5">四室+</a>
+                </p>
+                <input type="hidden" id="huXingName" />
+            </li>
+            <li><span>类型：</span>
+                <p id="zuZhuFangShi">
+                    <a href="javaScript:;" class="cur" value="" no-search>不限</a>
+                    <a href="javaScript:;" value="1">整租</a>
+                    <a href="javaScript:;" value="2">合租</a>
+                </p>
+                <input type="hidden" id="zuZhuFangShiName" />
+            </li>
+            <li><span>特色：</span>
+                <p id="tese">
+                    <a href="javaScript:;" class="cur" teseAId="" lat="" lng="" no-search>不限</a>
+                </p>
+                <input type="hidden" id="teseName" />
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+    <div class="yx">
+        <div>
+            <strong>已选条件：</strong>
+            <ul id="yiXuanTiaoJian">
+
+            </ul>
+            <p id="allClose" class="allClose">清空全部</p>
+            <p id="noTiaojian" class="noTiaojian">暂时没有筛选条件</p>
+        </div>
+    </div>
+</div>
+<!--xs end-->
+<!--<div class="px">
+    <div class="w1200">
+        <a href="#" class="cur">默认</a><a href="#">价格从低到高</a><a href="#">可入住</a>
+    </div>
+</div>-->
+<!--px end-->
+<div class="index-con">
+    <ul class="list" id="list">
+        <!--<li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" width="391" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" width="391" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" width="391" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="imgbox"><img src="images/fangdemo.jpg" /></div>
+                <h3>创客公寓F栋-1室1厅1卫-40.0㎡<span class="price"><i class="f20">1500</i>元/月</span></h3>
+                <p>单间<span class="mlr5">|</span>合租<span class="mlr5">|</span>37M²<span class="mlr5">|</span>5/10<span class="fr"><i class="location"></i>高新技术开发区</span></p>
+                </a>
+        </li>-->
+    </ul>
+
+    <!----翻页 end---->
+    <div class="clearfix"></div>
+    <div class="pages">
+        <div id="map_list_ul_page" class="map_list_ul_page"></div>
+        <!--<a href="#">&lt;</a><a href="">1</a><a href="">2</a><a href="">3</a><a href="" class="cur">4</a><a href="">5</a><a href="">...</a><a href="">12</a><a href="">13</a><a href="">14</a><a href="#">&gt;</a>-->
+    </div>
+</div>
+<!--w1200 end-->
+<div id="footBottom"></div>
+<!--Footer end-->
+<!--百度竞价-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f0ccba4f13756405cfc394033114e05f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度竞价 end-->
+<!--百度统计-->
+<script>
+    var _hmt1 = _hmt1 || [];
+    (function() {
+        var hm1 = document.createElement("script");
+        hm1.src = "https://hm.baidu.com/hm.js?9a9d1cccafe359fe0d5a4bfcbae48c5b";
+        var s1 = document.getElementsByTagName("script")[1];
+        s1.parentNode.insertBefore(hm1, s1);
+    })();
+</script>
+<!--百度统计 end-->
+<script type="text/javascript" src="public/common/js/jquery-1.8.0.min.js?20170629_1"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.nav li').hover(function(){
+            $('span',this).stop().css('height','2px');
+            $('span',this).animate({
+                left:'0',
+                width:'100%',
+                right:'0'
+            },200);
+        },function(){
+            $('span',this).stop().animate({
+                left:'50%',
+                width:'0'
+            },200);
+        });
+        $(document).ready(function() {
+            $(".list li").hover(function(){
+                $(this).find(".imgbox img").animate({ width:"400px",height:"268px", marginLeft:"-10px", marginTop:"-7px" },"swing")
+            },function() { $(this).find(".imgbox img").stop(true,false).animate({ width:"380px",height:"254px",marginLeft:"0px", marginTop:"0px"},"swing");})
+        });
+        $(".searbox").hover(function(){
+            $(this).animate({ width:"200px"})},function(){$(this).stop(true,false).animate({width:"34px"});})
+    });
+</script>
+<script src="public/three.min.js?20170629_1"></script>
+<script src="public/projector.js?20170629_1"></script>
+<script src="public/canvas-renderer.js?20170629_1"></script>
+<script src="public/3d-lines-animation.js?20170629_1"></script>
+<script src="public/color.js?20170629_1"></script>
+<script type="text/javascript" src="public/ext/layui/layui.all.js?v=20170901"></script>
+<script type="text/javascript" src="public/common/js/public.js?v=20170901"></script>
+<script type="text/javascript" src="js/api/listApi.js?v=20180705"></script>
+<script type="text/javascript" src="js/list.js?v=20170907"></script>
+</body>
+</html>

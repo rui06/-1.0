@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <title>我的资料</title>
+    <link rel="shortcut icon" href="images/mian_logo.ico">
+    <link rel="stylesheet" type="text/css" href="public/common/css/public.css?20170629_1"/>
+    <link rel="stylesheet" type="text/css" href="public/ext/layui/css/layui.css?20170629_1" />
+    <link rel="stylesheet" type="text/css" href="css/ziLiao.css?20170629_1" />
+</head>
+<body>
+<!------- 头部 ------->
+<div id="header_item"></div>
+<!------- content ------->
+<div class="geRenContent">
+    <div class="content">
+        <div class="conLeft">
+            <dl class="touXiang">
+                <dt><img src="images/pic.jpg" /></dt>
+                <dd>想飞的鸟</dd>
+            </dl>
+            <ul id="geren">
+                <li id="fangZu"><a href="geRenCenter.html">支付房租</a></li>
+                <li id="guanJia"><a href="guanJia.html">我的管家</a></li>
+                <li id="touSu"><a href="touSu.html">我的投诉</a></li>
+                <li id="ziLiao"><a href="javaScript:;" class="conActive">我的资料</a></li>
+                <li id="youHuiJuan"><a href="youHuiJuan.html">我的优惠券</a></li>
+            </ul>
+        </div>
+        <div class="conRight">
+            <!----我的资料------>
+            <div class="ziLiao" id="ziLiaoCon">
+                <h3 class="gerenH3">我的资料</h3>
+                <dl>
+                    <dt><img src="images/fyde/1.png" /></dt>
+                    <dd><a href="javaScript:;">头像上传</a></dd>
+                </dl>
+                <div class="ziLiaoLei">
+                    <p>
+                        <span>昵称</span>
+                        <input type="text" id="userName" />
+                    </p>
+                    <p>
+                        <span>性别</span>
+                        <input class="xingBie" type="radio" name="sex" checked />男
+                        <input class="xingBie" type="radio" name="six" />女
+                    </p>
+                    <p>
+                        <span>生日</span>
+                        <input type="text" id="shengRi" />
+                    </p>
+                    <p>
+                        <span>职业</span>
+                        <input type="text" id="zhiye" />
+                    </p>
+                    <p>
+                        <span>爱好</span>
+                        <input type="text" id="aiHao" />
+                    </p>
+                </div>
+            </div>
+            <!----我的资料  end------>
+        </div>
+    </div>
+</div>
+<!------- footer ------->
+<div id="footBottom"></div>
+</body>
+<script type="text/javascript" src="public/common/js/jquery-1.8.0.min.js?20170629_1"></script>
+<script type="text/javascript" src="public/ext/layui/layui.all.js?20170629_1"></script>
+<script type="text/javascript" src="public/common/js/public.js?20170629_1"></script>
+<script type="text/javascript" src="js/ziLiao.js?20170629_1"></script>
+<script type="text/javascript" src="js/api/ziLiaoApi.js?20170629_1"></script>
+</html>

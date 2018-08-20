@@ -1,0 +1,503 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <title>房源详情</title>
+    <link rel="shortcut icon" href="images/mian_logo.ico">
+    <link rel="stylesheet" type="text/css" href="css/detailCommon.css?20170629_1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?20170629_1" />
+    <link rel="stylesheet" href="public/ext/layui/css/layui.css?20170629_1" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css?20180808" />
+</head>
+
+<body style="background: #f8f8f8;">
+<!------- 头部 ------->
+<div id="header_item"></div>
+<!--w12000 end-->
+<div class="clearfix"></div>
+<div class="mainimg w1200" style="height:400px; margin:10px auto 40px;">
+    <div class="left fl">
+        <div id="preview" class="spec-preview"> <span class="jqzoom" id="bigImg"><!--<img jqimg="images/img1.jpg" src="images/img1.jpg" />--></span></div>
+        <!--缩图开始-->
+        <div class="spec-scroll"> <a class="prev"><img src="images/prev_page.png" /></a> <a class="next"><img src="images/next_page.png" /></a>
+            <div class="items">
+                <ul id="smallImg">
+                    <!--<li><img alt="佳能" bimg="images/img1.jpg" src="images/img1.jpg" onmousemove="preview(this);"></li>
+                    <li><img alt="佳能" bimg="images/img2.jpg" src="images/img2.jpg" onmousemove="preview(this);"></li>
+                    <li><img alt="佳能" bimg="images/img3.jpg" src="images/img3.jpg" onmousemove="preview(this);"></li>
+                    <li><img alt="佳能" bimg="images/img6.jpg" src="images/img6.jpg" onmousemove="preview(this);"></li>-->
+                </ul>
+            </div>
+        </div>
+        <!--缩图结束-->
+    </div>
+    <!--left end-->
+    <div class="dingYou">
+        <div class="xq" id="xiangQing">
+            <!--<h4>￥<strong>3500</strong>元/月</h4>
+            <div class="huxing">
+                <strong>江宁区-新街口西里一区-4居室-<span>卧室A</span></strong>
+            </div>
+            <div class="xiangxi">
+                <p><span>编号</span>124845</p>
+                <p><span>楼层</span>第13层/共23层</p>
+                <p><span>卧室</span>面积：540m²</p>
+                <p><span>朝向</span>西南</p>
+                <p><span>居室</span>3室2厅1卫</p>
+                <p><span>小区</span>天策府</p>
+                <p><span>交通</span>天策府</p>
+            </div>
+            <div class="xiangQingteSe">
+                <strong class="list_tese01">地铁周边</strong>
+                <strong class="list_tese02">特色</strong>
+                <strong class="list_tese03">独卫</strong>
+            </div>
+            <div class="house">
+                <a href="javaScript:;" class="checkHouse">我要看房</a>
+                <a href="javaScript:;" class="zuHouse">我要租房</a>
+            </div>-->
+        </div>
+        <div class="guanjia">
+            <h3>管家信息</h3>
+            <dl>
+                <dt><img src="images/guanjia.jpg" /></dt>
+                <dd>
+                    <strong>租房小管家</strong>
+                    <span>400-025-8255</span>
+                    <p>周一-周日：09:00-18:00</p>
+                </dd>
+            </dl>
+            <div class="jies">用心倾听每一通来电，认真记录每一个需求，快速解决生活当中的每一个麻烦，我们就是您在棉花公寓的贴心小管家，随时恭候您的来电！</div>
+        </div>
+    </div>
+
+</div>
+<!--content end-->
+<div class="w1200">
+    <div class="content">
+        <div class="detail-banner">
+
+            <div class="slide-main" id="touchMain">
+                <a class="prev" style="border: 0" href="javascript:;" stat="prev1001"><img src="images/banner/banner-left.png" style="border: 0"/></a>
+                <div class="slide-box" id="slideContent">
+                    <!--<div class="slide">
+                        <img src="images/banner/indexBanner/banner001.jpg" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/banner/indexBanner/banner002.jpg" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/banner/indexBanner/banner003.jpg" />
+                    </div>-->
+                </div>
+                <a class="next" style="border: 0" href="javascript:;" stat="next1002"><img src="images/banner/banner-right.png" style="border: 0"/></a>
+                <div class="item" id="bannerItem">
+                    <!--<a class="cur" stat="item1001" href="javascript:;"></a>
+                    <a href="javascript:;" stat="item1002"></a>
+                    <a href="javascript:;" stat="item1003"></a>-->
+                </div>
+            </div>
+        </div>
+        <div class="peiZhi">
+            <h4>房屋配置</h4>
+            <div class="peiZhiList" id="peiZhiList">
+                <p><img src="images/peizhiPC01.png" /></p>
+                <!--<dl>
+                    <dt><img src="images/smenu.jpg" /></dt>
+                    <dd>床</dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/smenu.jpg" /></dt>
+                    <dd>柜子</dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/smenu.jpg" /></dt>
+                    <dd>桌子</dd>
+                </dl>
+                <dl>
+                    <dt><img src="images/smenu.jpg" /></dt>
+                    <dd>椅子</dd>
+                </dl>-->
+            </div>
+        </div>
+        <div class="fangShi">
+            <h4>付款方式</h4>
+            <table id="fuKuan">
+                <thead>
+                    <tr>
+                        <th>付款方式</th>
+                        <th>月租金</th>
+                        <th>月生活费</th>
+                        <th>押金</th>
+                        <th name="feiYongLeiXing">第一次付款</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr name="fuKuan-yueFu">
+                        <td><span>月付</span></td>
+                        <td name="zuJin"></td>
+                        <td name="yueShenghuofei"></td>
+                        <td name="yaJin"></td>
+                        <td name="oneFuKuan"></td>
+                    </tr>
+                    <tr name="fuKuan-jiFu">
+                        <td><span>季付</span></td>
+                        <td name="zuJin"></td>
+                        <td name="yueShenghuofei"></td>
+                        <td name="yaJin"></td>
+                        <td name="oneFuKuan"></td>
+                    </tr>
+                    <tr name="fuKuan-banNianFu">
+                        <td><span>半年付</span></td>
+                        <td name="zuJin"></td>
+                        <td name="yueShenghuofei"></td>
+                        <td name="yaJin"></td>
+                        <td name="oneFuKuan"></td>
+                    </tr>
+                    <tr name="fuKuan-nainFu">
+                        <td><span>年付</span></td>
+                        <td name="zuJin"></td>
+                        <td name="yueShenghuofei"></td>
+                        <td name="yaJin"></td>
+                        <td name="oneFuKuan"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="shiYou">
+            <!--<h4>室友信息<a href="">更多 >></a></h4>-->
+            <h4>其他房间</h4>
+            <ul id="danjian" class="danjian">
+                <!--<li class="dangQian">
+                    <a href="">
+                        <dl class="roomXiangQing">
+                            <dt class="dangQianImg"><span>?</span></dt>
+                            <dd class="roomType">
+                                <strong>卧室A</strong>
+                                <span>当前房源</span>
+                            </dd>
+                        </dl>
+                        <div class="peopleContent">
+                            <p class="xingZuo">
+                                <strong>狮子座</strong>
+                                <span>星座</span>
+                            </p>
+                            <p class="zhiYe">
+                                <strong>it</strong>
+                                <span>职业</span>
+                            </p>
+                        </div>
+                        <div class="roomDetails">
+                            <p class="roomZujin">2150元/月</p>
+                            <p class="roomChaoXiang">朝南/25m²</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="yiRuZhu">
+                    <dl class="roomXiangQing">
+                        <dt class="dangQianImg"><span class="nvPic"></span></dt>
+                        <dd class="roomType">
+                            <strong>卧室A</strong>
+                            <span>已入住</span>
+                        </dd>
+                    </dl>
+                    <div class="peopleContent">
+                        <p class="xingZuo">
+                            <strong>狮子座</strong>
+                            <span>星座</span>
+                        </p>
+                        <p class="zhiYe">
+                            <strong>it</strong>
+                            <span>职业</span>
+                        </p>
+                    </div>
+                    <div class="roomDetails">
+                        <p class="roomZujin">2150元/月</p>
+                        <p class="roomChaoXiang">朝南/25m²</p>
+                    </div>
+                </li>
+                <li class="dangQian">
+                    <dl class="roomXiangQing">
+                        <dt class="dangQianImg"><span>?</span></dt>
+                        <dd class="roomType">
+                            <strong>卧室A</strong>
+                            <span>当前房源</span>
+                        </dd>
+                    </dl>
+                    <div class="peopleContent">
+                        <p class="xingZuo">
+                            <strong>狮子座</strong>
+                            <span>星座</span>
+                        </p>
+                        <p class="zhiYe">
+                            <strong>it</strong>
+                            <span>职业</span>
+                        </p>
+                    </div>
+                    <div class="roomDetails">
+                        <p class="roomZujin">2150元/月</p>
+                        <p class="roomChaoXiang">朝南/25m²</p>
+                    </div>
+                </li>
+                <li class="dangQian">
+                    <dl class="roomXiangQing">
+                        <dt class="dangQianImg"><span>?</span></dt>
+                        <dd class="roomType">
+                            <strong>卧室A</strong>
+                            <span>当前房源</span>
+                        </dd>
+                    </dl>
+                    <div class="peopleContent">
+                        <p class="xingZuo">
+                            <strong>狮子座</strong>
+                            <span>星座</span>
+                        </p>
+                        <p class="zhiYe">
+                            <strong>it</strong>
+                            <span>职业</span>
+                        </p>
+                    </div>
+                    <div class="roomDetails">
+                        <p class="roomZujin">2150元/月</p>
+                        <p class="roomChaoXiang">朝南/25m²</p>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
+        <!--<div class="huXingTu">
+            <h4>户型图</h4>
+            <ul class="huXingImg">
+                <li>
+                    <img src="images/huxing01.jpg" />
+                </li>
+                <li>
+                    <img src="images/huxing02.jpg" />
+                </li>
+            </ul>
+        </div>-->
+        <div class="ditu">
+            <h4>地图</h4>
+            <div class="surrounding">
+                <div class="mapWrap">
+                    <div class="detailmap" id="detailmap"></div>
+                </div>
+                <div class="actionWrap">
+                    <ul class="action" id="detail_zhoubian">
+                        <!--<li>
+                            <i class="ico-room ico-room-traffic"></i>
+                            <span data-query="地铁$公交">交通</span>
+                        </li>-->
+                        <li>
+                            <i class="ico-room ico-room-supermarket"></i>
+                            <span data-query="商场$超市">购物</span>
+                        </li>
+                        <li>
+                            <i class="ico-room ico-room-food"></i>
+                            <span data-query="餐饮">餐饮</span>
+                        </li>
+                        <li>
+                            <i class="ico-room ico-room-bank"></i>
+                            <span data-query="银行">银行</span>
+                        </li>
+                        <!--<li>
+                            <i class="ico-room ico-room-fitness"></i>
+                            <span data-query="健身">健身</span>
+                        </li>-->
+                        <li>
+                            <i class="ico-room ico-room-hospital"></i>
+                            <span data-query="医院">医院</span>
+                        </li>
+                        <!--<li>
+                            <i class="ico-room ico-room-church"></i>
+                            <span data-query="教堂">教堂</span>
+                        </li>-->
+                    </ul>
+                    <h5>路线查询</h5>
+                    <div class="lineSearch">
+                        <div class="search">
+                            <input id="searchInput" type="text" placeholder="要从当前公寓到哪里去？">
+                            <button id="searchBtn" type="button">搜索</button>
+                        </div>
+                        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style=" padding: 0;">
+                            <ul class="layui-tab-title">
+                                <li id="transit" class="layui-this" style="min-width: 35px;">公交</li>
+                                <li id="driving" style="min-width: 35px;">打车</li>
+                                <li id="walking" style="min-width: 35px;">步行</li>
+                            </ul>
+                            <div class="layui-tab-content" style=" max-height: 300px; padding: 0; overflow-y: scroll;">
+                                <div id="gongjiao" class="layui-tab-item"></div>
+                                <div id="jiacheng" class="layui-tab-item"></div>
+                                <div id="buxing" class="layui-tab-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yuYueKanFang" id="yuYueKanFang" style="display: none">
+        <div class="yuYueTiShi">
+            <p>您提交信息成功预约之后，我们将在24小时内联系您</p>
+            <p>如您着急找房，也可拨打客服热线：400-025-8255</p>
+        </div>
+        <div class="layui-form layui-form-pane" >
+            <div class="layui-form-item" style="margin-top: 10px;">
+                <div class="layui-inline">
+                    <label class="layui-form-label">我的姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="yuYueName"  autocomplete="off" placeholder="我的姓名" class="layui-input" style="width: 290px;">
+                    </div>
+                </div>
+                <div class="layui-inline" >
+                    <label  class="layui-form-label">预约日期</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="date" id="yuYueTime" autocomplete="off" placeholder="预约日期" class="layui-input" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" style="width: 290px;">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">联系电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="yuYuePhone"  autocomplete="off" placeholder="联系电话" class="layui-input" style="width: 290px;">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <button id="yuYueSubmit" class="layui-btn layui-btn-warm" style="margin: 5px 0 0 0;background-color: #008cd6; font-size: 14px;">立即预约</button>
+            </div>
+        </div>
+    </div>
+    <!--预定-->
+    <div class="yudingNeiRong" id="yudingNeiRong" style="display: none;">
+        <div class="tiaoKuanCon">
+            <div class="tiaoKuan">
+                您支付<span>200元</span>定金后，该房间会为您保留<span>48小时</span>，否则我们双倍返还您的定金。您须在48小时内与我们签订正式租赁合同（<span>如果您对预定的房间不满意，可以更换其他房间</span>），如您拒绝签约，定金将不予返还。
+            </div>
+            <div class="tiaoKuanContent">
+                <dl>
+                    <dt>一、定金条款</dt>
+                    <dd>（1）您支付定金后，我们会在工作时间尽快与您联系，您也可以在支付定金后联系客服。</dd>
+                    <dd>（2）如果您想预定，但在48小时内签约却有困难，请先联系客服。</dd>
+                    <dd>（3）官网上所有房源都可以预定，配置中的房源不能立马入住，预定前请咨询客服可入住时间。</dd>
+                    <dd>（4）如果想了解细节，请在工作时间（9:00-18:00）拨打400-025-8255联系客服。</dd>
+                </dl>
+                <dl>
+                    <dt>二、房租费用</dt>
+                    <dd>（1）房  租：官网标示价格为季付价格，月付上调6%，半年付98折，年付96折。</dd>
+                    <dd>（2）生活费：合租生活费为170元/月/间，两人居住为200元/月/间，包含水费、煤气费、宽带费、物业费，整租生活费为80元/月/间，包含宽带费、物业费。</dd>
+                    <dd>（3）其他费用：合租租客需要自行缴纳电费，整租需要自行缴纳电费、水费和燃气费，除此之外，没有其他费用。</dd>
+                </dl>
+                <dl>
+                    <dt>三、付款方式和合同期限</dt>
+                    <dd>（1）月付、季付、半年付、年付都可以。</dd>
+                    <dd>（2）我们不提供短租服务，需要签订1年期租赁协议。</dd>
+                </dl>
+                <dl>
+                    <dt>四、注意事项</dt>
+                    <dd>（1）居住人数：双人间不超过2人，单人间不超过1人；</dd>
+                    <dd>（2）年龄在18-40岁之间（整租没有年龄限制）；</dd>
+                    <dd>（3）房屋内禁止饲养宠物（整租可以饲养宠物）；</dd>
+                    <dd>（4）入住需提供身份证原件和社会资质证明（工作证明、学生证、胸卡、工作证、劳动合同、就业协议、入职邮件或短信、收入证明、名片、学历证明等其中的一种），若提供社会资质证明确有困难，请先联系客服再预定。</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="buttomBj">
+            <button type="button" id="jiXuYuDing">在线预定</button>
+        </div>
+    </div>
+    <div class="layui-form" id="zaiXianZuFang" style="display: none;">
+        <div class="dingJinPic">
+            <img src="images/dingjinPic.jpg" />
+        </div>
+        <div class="layui-form-item" style="margin: 10px 0;">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-block">
+                <input id="yuDingName" style="width: 320px;" type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item" style="margin: 10px 0;">
+            <label class="layui-form-label">联系电话</label>
+            <div class="layui-input-block">
+                <input id="yuDingPhone" style="width: 320px;" type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入手机号" class="layui-input">
+            </div>
+        </div>
+        <!--<div class="layui-form-item" style="margin-bottom: 5px;">
+            <label class="layui-form-label">定金</label>
+            <div class="layui-input-block">
+                <input id="yuDingDingJin" style="width: 300px;" type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入定金" class="layui-input">
+            </div>
+            <label class="layui-form-label" style="width: 280px; color: #bdbdbd; text-align: left; padding: 0 0 0 110px;">一般为租金的10%</label>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label">入住日期</label>
+            <div class="layui-input-block">
+                <input id="ruZhuDate" style="width: 300px;" type="text" name="date" id="date" lay-verify="date" placeholder="预计入住日期" autocomplete="off" class="layui-input" onclick="layui.laydate({elem: this})">
+            </div>
+        </div>-->
+        <!--<div class="layui-form-item" style="margin-top: 15px;">
+            <label class="layui-form-label">最多入住人数</label>
+            <div class="layui-input-block">
+                <input id="renShu" style="width: 300px;" type="text" name="title" lay-verify="title" autocomplete="off" class="layui-input">
+            </div>
+        </div>-->
+        <div class="layui-form-item layui-form-text" style="margin: 10px 0;">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-block">
+                <textarea id="yuDingBeiZhu" style="width: 320px;" placeholder="请输入内容" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <button id="LiJiYuDing" class="layui-btn" style="background: #008cd6; margin-left: 200px;">立即预定</button>
+    </div>
+    <!--预定 end-->
+</div>
+<!--content end-->
+<!------- footer ------->
+<div id="footBottom"></div>
+<script type="text/javascript" src="public/common/js/jquery-1.8.0.min.js?20170629_1"></script>
+<script type="text/javascript" src="public/ext/layui/layui.all.js?20170629_1"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SKG8d2hZRjmSQpvtkz89nquhHn5BCrdD"></script>
+<script type="text/javascript" src="public/ext/rangeSlider/ion.rangeSlider.js?20170629_1"></script>
+<script type="text/javascript" src="public/common/js/jquery.SuperSlide.2.1.1.js?20170629_1"></script>
+<script type="text/javascript" src="public/common/js/jquery.pin.js?20170629_1"></script>
+<script type="text/javascript" src="public/common/js/jquery.jqzoom.js?20170629_1"></script>
+<script type="text/javascript" src="js/base.js?20170629_1"></script>
+<script type="text/javascript">
+    jQuery(".slideTxtBox1").slide({trigger:"mouseover",easing:"easeOutCirc"});
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".hxlist li").click(function(){
+            layer.open({
+                type: 2,
+                area: ['850px', '335px'],
+                fix: false, //不固定
+                title: false,
+                content: 'taitiehuayuandetail/type1.html'
+            });
+        });
+        $(".dingYou").pin({containerSelector: "body", minWidth: 940});
+        $(".side ul li").hover(function(){
+            $(this).find(".sidebox").stop().animate({"width":"150px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#5dc6de"})
+        },function(){
+            $(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})
+        });
+        $(".side ul li").hover(function(){
+            $(this).find(".weichat").stop().animate({"right":"54px"},500).css({"opacity":"1","filter":"Alpha(opacity=100)","display":"block"})
+        },function(){
+            $(this).find(".weichat").stop().animate({"right":"108px"},500).css({"opacity":"0","filter":"Alpha(opacity=0)","display":"none"})
+        });
+    });
+
+    //回到顶部
+    function goTop(){
+        $('html,body').animate({'scrollTop':0},600);
+    }
+</script>
+<script type="text/javascript" src="public/ext/banner/main.js?20170629_1"></script>
+<script src="public/ext/jwplayer/jwplayer.js?20170629_1"></script>
+<script type="text/javascript" src="public/common/js/public.js?20170629_1"></script>
+<script type="text/javascript" src="js/details.js?20180505"></script>
+<script type="text/javascript" src="js/api/detailsApi.js?20170629_1"></script>
+</body>
+</html>
